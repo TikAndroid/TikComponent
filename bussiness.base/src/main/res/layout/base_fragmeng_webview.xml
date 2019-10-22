@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout style="@style/Toolbar">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/itemTitleColor"
+            android:textSize="@dimen/text_18"
+            android:lineSpacingExtra="@dimen/text_medium"
+            android:textAppearance="@style/TextStyle.Title" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="start|center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/ic_title_back" />
+
+    </FrameLayout>
+
+    <com.tik.android.component.bussiness.webview.HoxWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

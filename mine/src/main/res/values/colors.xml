@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--mine title-->
+    <color name="mine_title_color">@color/itemTitleColor</color>
+
+    <color name="mine_login_button_white">#FFFFFF</color>
+    <color name="mine_login_button_gray">#626678</color>
+    <color name="mine_title_color_foreground">#FFFFFF</color>
+    <color name="mine_logout_button_color">#ffff6666</color>
+    <color name="mine_user_info">#ff626678</color>
+
+    <!-- dialog, colorXX or  xXColor ?-->
+    <color name="mine_dialog_title_color">@color/itemTitleColor</color>
+    <color name="mine_dialog_content_color">@color/itemTitleColor</color>
+    <color name="mine_dialog_positive_button_color">@color/colorDialogOk</color>
+    <color name="mine_dialog_nature_button_color">@android:color/black</color>
+    <color name="mine_dialog_negative_button_color">@android:color/black</color>
+</resources>

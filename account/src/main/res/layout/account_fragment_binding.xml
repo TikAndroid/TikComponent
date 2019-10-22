@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <FrameLayout
+        style="@style/AccountTitleBarStyle">
+
+        <!--需要修改一下！！ style="@style/AccountImageButtonStyle" -->
+        <ImageView
+            android:id="@+id/title_btn_left"
+            style="@style/AccountTitleCloseStyle"
+            android:src="@drawable/account_ic_close"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/AccountTextStyle.Title"
+            style="@style/AccountTitleStyle"
+            android:layout_gravity="center"
+            android:text="@string/account_binding_title_phone"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/account_margin_general"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        <android.support.v7.widget.CardView
+            android:id="@+id/account_bind_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/account_margin_general"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="@dimen/account_round_corner_radius"
+            app:cardBackgroundColor="@color/account_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/binding_item_country"
+                    style="@style/AccountCardFormItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height">
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        android:textAppearance="@style/AccountTextStyle.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="@string/account_register_input_country"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/account_icon_size"
+                        android:layout_height="@dimen/account_icon_size"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:src="@drawable/account_ic_country"/>
+
+                    <TextView
+                        android:id="@+id/btn_country_choose"
+                        android:textAppearance="@style/AccountTextStyle.Medium.Deactive"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/account_margin_general"
+                        android:layout_marginEnd="@dimen/dimen_16"
+                        app:layout_constraintStart_toEndOf="@id/tv_country"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:gravity="end"
+                        android:singleLine="true"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <include
+                    android:id="@+id/binding_divider_below_country"
+                    layout="@layout/account_divider" />
+                <LinearLayout
+                    android:id="@+id/binding_item_phone"
+                    style="@style/AccountCardFormItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/binding_country_code"
+                        android:textAppearance="@style/AccountTextStyle.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/account_margin_general"/>
+
+                    <com.tik.android.component.EditTextField
+                        android:id="@+id/binding_number"
+                        android:textAppearance="@style/AccountTextStyle.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:enableSwitchPwd="true"
+                        android:maxLength="20"
+                        android:hint="@string/account_register_input_phone"
+                        android:inputType="phone"/>
+                </LinearLayout>
+
+                <com.tik.android.component.EditTextField
+                    android:id="@+id/binding_email"
+                    style="@style/AccountCardFormItemStyle"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:background="@color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/account_register_input_mail"/>
+
+                <include
+                    android:id="@+id/binding_divider_below_country"
+                    layout="@layout/account_divider" />
+
+                <LinearLayout
+                    android:id="@+id/register_item_phone_verify"
+                    style="@style/AccountCardFormItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tik.android.component.EditTextField
+                        android:id="@+id/binding_verify_code"
+                        android:textAppearance="@style/AccountTextStyle.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        app:enableSwitchPwd="true"
+                        android:maxLength="6"
+                        android:hint="@string/account_binding_code_verify_hint"
+                        android:layout_marginEnd="@dimen/dimen_12"
+                        android:layout_weight="1"
+                        android:inputType="phone"/>
+                    <TextView
+                        android:id="@+id/binding_get_verify_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_14"
+                        android:textColor="@color/highlight"
+                        android:text="@string/account_binding_code_verify"
+                        tools:text="@string/account_binding_code_verify"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/binding_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/highlight"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textSize="@dimen/text_12"
+            android:gravity="end"
+            tools:text="@string/account_binding_type_email"
+            android:text="@string/account_binding_type_email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/binding_bind"
+        android:text="@string/account_binding_bind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_button_height"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16"
+        android:background="@drawable/account_selector_single_blue_r8"
+        android:layout_marginStart="@dimen/account_margin_general"
+        android:layout_marginEnd="@dimen/account_margin_general"
+        android:layout_marginTop="@dimen/dimen_12"/>
+
+</LinearLayout>

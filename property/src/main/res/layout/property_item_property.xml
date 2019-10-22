@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/container"
+    android:background="@drawable/bg_card">
+
+    <ImageView
+        android:id="@+id/image_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_tag_hk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_stockName"
+        style="@style/property_black_14"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_tag"
+        app:layout_constraintStart_toEndOf="@+id/image_tag"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="亚马逊" />
+
+    <TextView
+        android:id="@+id/tv_symbol"
+        style="@style/property_grey_14"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_stockName"
+        app:layout_constraintStart_toEndOf="@+id/tv_stockName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="(AMZN)" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stockName" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/assets_current_total_price"
+        style="@style/property_grey_12"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider"
+        android:text="@string/property_assets_current_total_price" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_volume"
+        style="@style/property_black_14"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assets_current_total_price"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="@dimen/dimen_12"
+        tools:text="20" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_currentTotalPrice"
+        style="@style/property_black_12"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_volume"
+        android:layout_marginLeft="12dp"
+        android:paddingBottom="@dimen/dimen_16"
+        tools:text="20" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/current_hold_price"
+        style="@style/property_grey_12"
+        android:text="@string/property_current_hold_price"
+        app:layout_constraintBottom_toBottomOf="@+id/assets_current_total_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/assets_current_total_price" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_current_price"
+        style="@style/property_black_14"
+        tools:text="1,627.85"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_volume"
+        app:layout_constraintEnd_toEndOf="@+id/current_hold_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_volume" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_holder_price"
+        style="@style/property_black_12"
+        tools:text="1,206.93"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_currentTotalPrice" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/profit_profit_rate"
+        style="@style/property_grey_12"
+        android:layout_marginRight="12dp"
+        android:text="@string/property_profit_profit_rate"
+        app:layout_constraintBottom_toBottomOf="@+id/current_hold_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/current_hold_price" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_profit"
+        style="@style/property_black_14"
+        tools:text="8418.40"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_current_price"
+        app:layout_constraintEnd_toEndOf="@+id/profit_profit_rate"
+        app:layout_constraintTop_toTopOf="@+id/tv_current_price" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/tv_profit_rate"
+        style="@style/property_black_12"
+        tools:text="34.87%"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_holder_price"
+        app:layout_constraintEnd_toEndOf="@+id/tv_profit"
+        app:layout_constraintTop_toTopOf="@+id/tv_holder_price" />
+
+</android.support.constraint.ConstraintLayout>

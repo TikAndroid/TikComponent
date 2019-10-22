@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--这EditText是为了处理交易表单输入框在刷新时请求焦点导致滚动的问题-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <android.support.constraint.ConstraintLayout style="@style/Toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/trade_app_name"
+            android:textAppearance="@style/TextStyle.Title"
+            mine:layout_constraintBottom_toBottomOf="parent"
+            mine:layout_constraintEnd_toEndOf="parent"
+            mine:layout_constraintHorizontal_bias="0.5"
+            mine:layout_constraintStart_toStartOf="parent"
+            mine:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/trade_app_name" />
+
+        <ImageView
+            android:id="@+id/trade_search"
+            style="@style/TitleClickableImageStyle"
+            android:src="@drawable/ic_search_circle"
+            mine:layout_constraintBottom_toBottomOf="parent"
+            mine:layout_constraintEnd_toEndOf="parent"
+            mine:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/trade_btn_order"
+            style="@style/TitleClickableImageStyle"
+            android:src="@drawable/trade_ic_order_sm"
+            android:visibility="gone"
+            mine:layout_constraintStart_toStartOf="parent"
+            mine:layout_constraintTop_toTopOf="parent"
+            mine:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_marginTop="@dimen/toolbar_window_offset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trade_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/card_margin"
+            android:clipChildren="false"
+            android:clipToPadding="false"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mine_horizontal_margin">@dimen/margin_general</dimen>
+    <dimen name="mine_setting_item_height">48dp</dimen>
+    <dimen name="mine_setting_item_wrapper_height">56dp</dimen>
+    <dimen name="mine_user_preview_height">64dp</dimen>
+    <dimen name="mine_user_preview_top_offset">-4dp</dimen>
+    <dimen name="mine_setting_item_elevation">1dp</dimen>
+    <dimen name="mine_setting_item_vertical_gap">4dp</dimen>
+
+    <!--mine title-->
+    <dimen name="mine_title_height">@dimen/toolbar_content_height</dimen>
+    <dimen name="mine_title_size">18sp</dimen>
+
+    <!--mine login buttons-->
+    <dimen name="mine_login_buttons_width">66dp</dimen>
+    <dimen name="mine_login_buttons_height">24dp</dimen>
+    <dimen name="mine_logout_buttons_height">@dimen/mine_setting_item_height</dimen>
+
+    <!--split another section-->
+    <dimen name="mine_vertical_section_gap">24dp</dimen>
+
+    <!--dialog-->
+    <dimen name="mine_dialog_max_width">268dp</dimen>
+    <dimen name="mine_dialog_min_width">222dp</dimen>
+    <dimen name="mine_dialog_min_height">96dp</dimen>
+    <dimen name="mine_dialog_max_height">300dp</dimen>
+    <dimen name="mine_dialog_content_horizontal_margin">@dimen/dimen_22</dimen>
+    <dimen name="mine_dialog_content_vertical_margin">@dimen/dimen_18</dimen>
+    <dimen name="mine_dialog_button_height">48dp</dimen>
+</resources>

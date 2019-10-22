@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="account_text_title">@dimen/primary_page_text</dimen>
+    <dimen name="account_text_normal">@dimen/primary_page_sub_text</dimen>
+    <dimen name="account_text_medium">@dimen/primary_text</dimen>
+    <dimen name="account_text_little">@dimen/tertiary_text</dimen>
+
+    <dimen name="account_round_corner_radius">8dp</dimen>
+
+    <dimen name="account_margin_general">12dp</dimen>
+    <dimen name="account_margin_large">24dp</dimen>
+    <dimen name="account_button_height">48dp</dimen>
+    <dimen name="account_icon_size">24dp</dimen>
+    <dimen name="account_icon_size_medium">40dp</dimen>
+
+    <item name="account_text_alpha" type="dimen" format="float">1.0</item>
+    <item name="account_text_disable_alpha" type="dimen" format="float">0.26</item>
+</resources>

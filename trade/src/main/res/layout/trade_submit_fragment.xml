@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        style="@style/Toolbar"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_close_circle"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/TextStyle.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/trade_order_confirm"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:layout_margin="@dimen/card_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/stock_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_6"/>
+
+            <com.tik.android.component.widget.MediumTextView
+                android:id="@+id/stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextStyle.Primary" />
+
+            <TextView
+                android:id="@+id/operate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/highlight_green" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:background="@color/divider" />
+
+        <!--价格-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_price"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+        </LinearLayout>
+
+        <!--数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_number"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+        </LinearLayout>
+
+        <!--金额-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_amount"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/amounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+        </LinearLayout>
+
+        <!--应付-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_general"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/coin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trade_form_tv_pay"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/coin_amounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/text_color_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/margin_general"
+        android:background="@drawable/bg_round_rect_highlight"
+        android:gravity="center"
+        android:text="@string/trade_order_submit"
+        android:textAppearance="@style/TextStyle.Primary.Inverse" />
+
+</LinearLayout>

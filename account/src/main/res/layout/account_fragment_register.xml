@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <FrameLayout style="@style/AccountTitleBarStyle">
+        
+        <ImageView
+            style="@style/TitleClickableImageStyle"
+            android:id="@+id/title_btn_left"
+            android:src="@drawable/icon_close_circle"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/AccountTextStyle.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/account_register_title"/>
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Primary.Highlight"
+            android:id="@+id/title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_general"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/account_register_login"/>
+
+    </FrameLayout>
+    
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/card_margin"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/register_form"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/register_item_country"
+                style="@style/AccountCardFormItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_button_height">
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/account_register_input_country"/>
+
+                <ImageView
+                    android:layout_width="@dimen/account_icon_size"
+                    android:layout_height="@dimen/account_icon_size"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/account_ic_country"/>
+
+                <TextView
+                    android:id="@+id/btn_country_choose"
+                    android:textAppearance="@style/AccountTextStyle.Medium.Deactive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/account_margin_general"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    app:layout_constraintStart_toEndOf="@id/tv_country"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:gravity="end"
+                    android:singleLine="true"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <include android:id="@+id/divider_below_country" layout="@layout/account_divider" />
+
+            <LinearLayout
+                android:id="@+id/register_item_phone"
+                style="@style/AccountCardFormItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_button_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/register_input_country_code"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/account_margin_general"/>
+
+                <com.tik.android.component.EditTextField
+                    android:id="@+id/register_input_phone"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    app:enableSwitchPwd="true"
+                    android:hint="@string/account_register_input_phone"
+                    android:maxLength="20"
+                    android:inputType="phone"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/register_item_mail"
+                style="@style/AccountCardFormItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_button_height"
+                android:visibility="gone">
+
+                <com.tik.android.component.EditTextField
+                    android:id="@+id/register_input_mail"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:background="@color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/account_register_input_mail"/>
+            </FrameLayout>
+
+            <include layout="@layout/account_divider" />
+
+            <FrameLayout
+                android:id="@+id/register_item_pwd"
+                style="@style/AccountCardFormItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_button_height">
+
+                <com.tik.android.component.EditTextField
+                    android:id="@+id/register_input_pwd"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:maxLength="20"
+                    android:background="@color/transparent"
+                    app:enableSwitchPwd="true"
+                    android:hint="@string/account_register_input_pwd"
+                    android:inputType="textPassword"/>
+            </FrameLayout>
+
+
+            <include android:id="@+id/divider_above_invite" layout="@layout/account_divider" />
+
+            <FrameLayout
+                android:id="@+id/register_item_invite"
+                style="@style/AccountCardFormItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_button_height">
+
+                <com.tik.android.component.EditTextField
+                    android:id="@+id/register_input_invite"
+                    android:textAppearance="@style/AccountTextStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/account_button_height"
+                    android:maxLength="50"
+                    android:background="#00000000"
+                    android:inputType="numberSigned"
+                    android:hint="@string/account_register_input_invite"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Primary.Inverse"
+            android:id="@+id/register_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="@dimen/card_padding"
+            android:layout_marginEnd="@dimen/card_padding"
+            android:background="@drawable/bg_round_rect_highlight"
+            android:gravity="center"
+            android:text="@string/account_register_btn_register_immediately"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_form" />
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Little.Highlight"
+            android:id="@+id/register_btn_login_by_another"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/card_padding"
+            android:text="@string/account_login_by_mail"
+            app:layout_constraintTop_toBottomOf="@id/register_btn_ok"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Little.Highlight"
+            android:id="@+id/register_btn_register_by_another"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/account_register_btn_register_by_mail"
+            app:layout_constraintTop_toBottomOf="@id/register_btn_ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Little.Highlight"
+            android:id="@+id/register_btn_forgot_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/card_padding"
+            android:text="@string/account_forgot_pwd"
+            app:layout_constraintTop_toBottomOf="@id/register_btn_ok"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/service_contract"
+            android:textAppearance="@style/AccountTextStyle.Little.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/account_margin_large"
+            android:layout_marginStart="@dimen/card_padding"
+            android:layout_marginEnd="@dimen/card_padding"
+            android:text="@string/account_register_service_contract"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <include layout="@layout/account_login_by_third"
+            android:id="@+id/login_by_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_padding"
+            android:layout_marginEnd="@dimen/card_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="trade_app_name">交易</string>
+    <string name="trade_order_setting">订单</string>
+    <!--orders-->
+    <string name="trade_order_filter_current">当前</string>
+    <string name="trade_order_filter_histories">已成交</string>
+    <string name="trade_order_filter_closed">已关闭</string>
+    <string name="trade_list_header_title">当前委托</string>
+    <string name="trade_list_header_hide_other">隐藏非当前委托</string>
+    <string name="trade_list_header_show_all">全部</string>
+
+    <string name="trade_order_empty_current">暂无当前委托</string>
+    <string name="trade_order_empty_do_trade">去交易</string>
+    <string name="trade_order_empty_done">暂无更多订单</string>
+    <string name="trade_order_empty_closed">暂无关闭订单</string>
+
+    <string name="trade_order_direction_buy">买入</string>
+    <string name="trade_order_direction_sell">卖出</string>
+
+    <!--order status-->
+    <string name="trade_status_consign_submit">已提交</string>
+    <string name="trade_status_consigning">委托中</string>
+    <string name="trade_status_consign_success">委托成功</string>
+    <string name="trade_status_consign_failed">委托失败</string>
+    <string name="trade_status_pending">待成交</string>
+    <string name="trade_status_order_withdrawing">撤单中</string>
+    <string name="trade_status_partial_deal">部分成交</string>
+    <string name="trade_status_deal_done">已成交</string>
+    <string name="trade_status_revoked">已撤销</string>
+    <string name="trade_status_expired">过期撤销</string>
+
+    <string name="trade_order_detail_trade_direction">方向</string>
+    <string name="trade_order_detail_trade_process">成交/委托</string>
+    <string name="trade_order_detail_trade_amount">成交量</string>
+    <string name="trade_order_detail_trade_average">成交均价</string>
+    <string name="trade_order_detail_trade_turnover">成交额</string>
+    <string name="trade_order_detail_trade_fee">交易费</string>
+    <string name="trade_order_detail_commission_price">委托价</string>
+    <string name="trade_order_detail_commission_amount">委托额</string>
+    <string name="trade_order_detail_commission_time">委托时间</string>
+    <string name="trade_order_detail_deal_time">成交时间</string>
+
+    <!--action-->
+    <string name="trade_order_cancel_btn">撤单</string>
+    <string name="trade_view_detail">行情</string>
+
+    <!--交易买卖表单-->
+    <string name="trade_form_tv_pay">应付</string>
+    <string name="trade_form_tv_income">可得</string>
+    <string name="trade_form_usable_coin">可用资金：</string>
+    <string name="trade_form_usable_stock">可卖持仓：</string>
+    <string name="trade_tab_buy">买入</string>
+    <string name="trade_tab_sale">卖出</string>
+    <string name="trade_form_price_limit">限价</string>
+    <string name="trade_price_input_hint">请输入价格</string>
+    <string name="trade_form_number">数量</string>
+    <string name="trade_number_input_hint">请输入数量</string>
+    <string name="trade_1_of_4">1/4</string>
+    <string name="trade_1_of_3">1/3</string>
+    <string name="trade_1_of_2">1/2</string>
+    <string name="trade_quick_number_all">全仓</string>
+    <string name="trade_real_amounts">金额</string>
+    <string name="trade_confirm_login">登录</string>
+    <string name="trade_confirm_unlock">解锁交易</string>
+    <string name="trade_info_detail">明细</string>
+    <string name="trade_order_detail_title">订单详情</string>
+    <string name="trade_popup_info_label_fee">交易费率</string>
+    <string name="trade_popup_info_label_rate">汇率</string>
+
+    <!--委托确认-->
+    <string name="trade_order_confirm">委托确认</string>
+    <string name="trade_price">价格</string>
+    <string name="trade_number">数量</string>
+    <string name="trade_amount">金额</string>
+    <string name="trade_order_submit">提交订单</string>
+    <string name="trade_order_submit_in_process">正在委托</string>
+    <string name="trade_order_submitted">委托申请已提交</string>
+</resources>

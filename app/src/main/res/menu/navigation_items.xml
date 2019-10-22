@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_market"
+        android:icon="@drawable/app_selector_tab_market"
+        android:title="@string/app_market" />
+    <item
+        android:id="@+id/action_trade"
+        android:icon="@drawable/app_selector_tab_trade"
+        android:title="@string/app_trade" />
+    <!--<item-->
+        <!--android:id="@+id/action_information"-->
+        <!--android:icon="@drawable/app_tab_property"-->
+        <!--android:title="@string/app_information" />-->
+    <item
+        android:id="@+id/action_property"
+        android:icon="@drawable/app_selector_tab_property"
+        android:title="@string/app_property" />
+
+    <item
+        android:id="@+id/action_mine"
+        android:icon="@drawable/app_selector_tab_mine"
+        android:title="@string/app_mine" />
+</menu>

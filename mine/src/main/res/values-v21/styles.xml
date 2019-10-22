@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--base, used for some item to show shadow-->
+    <style name="MineElevation">
+        <item name="android:elevation">@dimen/mine_setting_item_elevation</item>
+    </style>
+</resources>

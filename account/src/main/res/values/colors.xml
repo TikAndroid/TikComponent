@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="account_white">#FFFFFF</color>
+    <color name="account_white_pressed">#9C9C9C</color>
+    <color name="account_white_disabled">#CFCECE</color>
+    <color name="account_highlight">#6687FF</color>
+    <color name="account_highlight_pressed">#4A70FA</color>
+    <color name="account_highlight_disabled">#92A9FA</color>
+    <color name="account_prompt">#FF6666</color>
+    <color name="account_divider">#329f9f9f</color>
+
+    <color name="account_text_primary">#23262F</color>
+    <color name="account_text_secondary">#626678</color>
+    <color name="account_text_inverse">#ffffff</color>
+
+    <color name="account_text_black">#000000</color>
+    <color name="account_text_highlight">@color/account_highlight</color>
+    <color name="account_text_prompt">@color/account_prompt</color>
+    <color name="account_text_deactive">#AEB2C2</color>
+
+</resources>

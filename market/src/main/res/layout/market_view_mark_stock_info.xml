@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mark_view_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_15"
+    android:textColor="@android:color/white"
+    android:background="@drawable/market_bg_shape_square">
+</TextView>

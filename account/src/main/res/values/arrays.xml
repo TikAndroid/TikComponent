@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_third_part_app">
+        <item>微信</item>
+        <item>谷歌</item>
+        <item>脸书</item>
+    </string-array>
+</resources>

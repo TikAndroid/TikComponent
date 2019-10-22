@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="market_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--弹出框动画-->
+    <style name="market_dialog_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_down</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="market_bottom_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <!-- 搜索历史 header -->
+    <style name="market_search_result_header_history">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/market_color_search_header</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 搜索历史清空 header -->
+    <style name="market_search_result_header_clear">
+        <item name="android:textSize">@dimen/text_12</item>
+        <item name="android:textColor">@color/market_color_search_clear</item>
+    </style>
+
+    <!-- 搜索结果列表名字 -->
+    <style name="market_search_result_item_name">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/itemTitleColor</item>
+        <item name="android:fontFamily">SF Pro Text Medium</item>
+    </style>
+
+    <!-- 搜索结果列表symbol -->
+    <style name="market_search_result_item_symbol">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/itemSubTitleColor</item>
+    </style>
+
+    <!-- 搜索输入框 -->
+    <style name="market_search_input_edit">
+        <!--293dp-->
+        <item name="android:layout_width">0dp </item>
+        <item name="android:layout_height">@dimen/dimen_30 </item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:shadowColor">@color/windowBackground</item>
+        <item name="android:drawablePadding">@dimen/dimen_2</item>
+        <item name="android:paddingLeft">@dimen/dimen_13</item>
+        <item name="android:layout_marginRight">@dimen/dimen_12</item>
+    </style>
+
+    <!-- 搜索界面顶端 -->
+    <style name="market_search_layout">
+        <item name="android:layout_marginTop">@dimen/dimen_9</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_9</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_12</item>
+        <item name="android:layout_marginRight">@dimen/dimen_11</item>
+    </style>
+
+    <!-- k线下拉popupWindow的text-->
+    <style name="market_pull_chart_popup">
+        <item name="android:paddingTop">@dimen/dimen_7</item>
+        <item name="android:paddingBottom">@dimen/dimen_8</item>
+        <item name="android:paddingLeft">@dimen/dimen_12</item>
+        <item name="android:paddingRight">@dimen/dimen_13</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/market_chart_pull_popup_color</item>
+    </style>
+
+    <!-- k线选择类型的btn-->
+    <style name="market_chart_selection_item">
+        <item name="android:paddingTop">@dimen/dimen_7</item>
+        <item name="android:paddingBottom">@dimen/dimen_7</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/itemSubTitleColor</item>
+        <!--<item name="android:background">@drawable/market_selector_type_selection_lite_bg</item>-->
+    </style>
+
+    <!-- k线界面当前收益率text-->
+    <style name="market_chart_price_gains_info">
+        <item name="android:lineSpacingExtra">@dimen/dimen_5</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

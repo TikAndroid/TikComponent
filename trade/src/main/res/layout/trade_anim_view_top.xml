@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trade_anim_chart_top"
+    android:layout_marginTop="@dimen/dimen_12"
+    android:layout_marginBottom="@dimen/dimen_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/trade_chart_btn"
+        style="@style/TitleClickableImageStyle"
+        android:layout_marginRight="@dimen/trade_dimen_4"
+        android:src="@drawable/trade_selector_chart_btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/trade_chart_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dimen_5"
+        app:layout_constraintLeft_toRightOf="@id/trade_chart_tag"
+        app:layout_constraintRight_toLeftOf="@id/trade_chart_btn"/>
+
+    <ImageView
+        android:id="@+id/trade_chart_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_2"
+        app:layout_constraintBottom_toBottomOf="@id/trade_chart_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/trade_chart_name"
+        app:layout_constraintTop_toTopOf="@id/trade_chart_name"/>
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/trade_chart_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trade_chart_name"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dimen_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/trade_chart_btn"
+        app:layout_constraintTop_toBottomOf="@id/trade_chart_name"/>
+
+</android.support.constraint.ConstraintLayout>

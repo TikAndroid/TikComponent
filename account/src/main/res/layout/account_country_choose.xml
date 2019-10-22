@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <FrameLayout
+        style="@style/AccountTitleBarStyle">
+        
+        <ImageView
+            style="@style/AccountTitleCloseStyle"
+            android:cropToPadding="false"
+            android:id="@+id/title_btn_left"
+            android:src="@drawable/icon_close_circle"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/AccountTextStyle.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/account_register_input_country"/>
+
+    </FrameLayout>
+
+
+    <com.tik.android.component.widget.EditTextField
+        android:id="@+id/input_search"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="@dimen/account_margin_general"
+        android:layout_marginEnd="@dimen/account_margin_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_search_input_bg"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/account_ic_search"
+        android:maxLines="1"
+        android:textAppearance="@style/AccountTextStyle.Medium"
+        android:hint="@string/account_country_search"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

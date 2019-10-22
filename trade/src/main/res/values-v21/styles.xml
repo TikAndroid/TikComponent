@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TradeQuickNumberButton">
+        <item name="android:background">@drawable/trade_selector_quick_number_btn</item>
+        <item name="android:elevation">@dimen/dimen_1</item>
+    </style>
+</resources>

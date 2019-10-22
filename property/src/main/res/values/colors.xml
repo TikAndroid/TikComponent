@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="property_red_rise">#ffff5d5d</color>
+    <color name="property_green_fall">#4EC286</color>
+    <color name="property_text_grey">#ffaeb2c2</color>
+    <color name="property_text_black">#ff23262f</color>
+    <color name="property_text_blue">#6687FF</color>
+</resources>

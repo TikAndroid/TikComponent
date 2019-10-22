@@ -1,0 +1,18 @@
+apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation deps.support.app_compat
+    implementation deps.support.cardview
+    implementation deps.tencent_wechat_sdk
+
+    annotationProcessor deps.butterknife.compiler
+    testImplementation deps.junit
+
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+
+    implementation project(path: ':bussiness.base')
+    implementation(name: deps.geetest, ext: 'aar')//静态导入
+}

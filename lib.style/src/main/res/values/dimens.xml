@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 全局字体大小通用值 -->
+    <dimen name="super_title">32sp</dimen><!--用于最大号阿拉伯数字，以及特殊中文标题-->
+    <dimen name="big_text">20sp</dimen><!--用于banner内主标题以及特殊用途大标题-->
+    <dimen name="primary_page_text">18sp</dimen><!--页面顶部主标题-->
+    <dimen name="primary_page_sub_text">16sp</dimen>!--页面顶部副标题,主按钮文本-->
+    <dimen name="primary_text">14sp</dimen>!--主要文本信息,副按钮文本-->
+    <dimen name="tertiary_text">12sp</dimen>!--辅助说明信息,次要文本信息-->
+    <dimen name="small_text">10sp</dimen>!--底部tab信息，气泡，tag文本-->
+    <dimen name="mini_text">8sp</dimen>!--迷你tag文本,特殊小字体-->
+
+    <!--toolbar-->
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_content_height">48dp</dimen>
+    <dimen name="toolbar_bottom_padding">12dp</dimen>
+    <dimen name="toolbar_window_offset">-12dp</dimen>
+
+    　<!-- 通用距离值定义 -->
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_17">17dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+
+    <!-- 通用字体大小值定义 -->
+    <dimen name="text_6">6sp</dimen>
+    <dimen name="text_7">7sp</dimen>
+    <dimen name="text_8">8sp</dimen>
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_21">21sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_23">23sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_25">25sp</dimen>
+
+    <dimen name="text_title">@dimen/primary_page_text</dimen>
+    <dimen name="text_normal">@dimen/primary_page_sub_text</dimen>
+    <dimen name="text_medium">@dimen/primary_text</dimen>
+    <dimen name="text_little">@dimen/tertiary_text</dimen>
+
+    <dimen name="round_corner_radius">8dp</dimen>
+
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">4dp</dimen>
+
+    <dimen name="margin_general">12dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_medium">40dp</dimen>
+
+    <item name="text_alpha" type="dimen" format="float">1.0</item>
+    <item name="text_disable_alpha" type="dimen" format="float">0.26</item>
+    <dimen name="dimen_divider">1px</dimen>
+
+    <dimen name="stroke_width">0.5dp</dimen>
+
+</resources>

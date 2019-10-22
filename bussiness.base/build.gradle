@@ -1,0 +1,24 @@
+apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation deps.support.app_compat
+    testImplementation deps.junit
+
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+    annotationProcessor deps.butterknife.compiler
+
+    api deps.andromeda
+
+    implementation deps.okhttp.okhttp
+    api deps.okhttp.interceptor
+    implementation deps.retrofit.gson
+    implementation deps.retrofit.scalars
+    implementation deps.retrofit.rxjava2
+    api deps.retrofit.retrofit
+    api deps.bugly_crashreport
+
+    api project(path: ':basemvp')
+}

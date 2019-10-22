@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_item_horizon_gap">7dp</dimen>
+    <dimen name="setting_item_subtitle_margin_right">10dp</dimen>
+
+    <dimen name="setting_item_tips_dot_radius">3dp</dimen>
+    <dimen name="setting_item_tips_dot_left_margin">4dp</dimen>
+
+    <dimen name="setting_item_divider">1dp</dimen>
+    <dimen name="setting_item_elevation">1dp</dimen>
+    <dimen name="tab_layout_default_padding">6dp</dimen>
+    <dimen name="tab_layout_default_text_size">14sp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TradeOrderDetail.Item">
+
+    <ImageView
+        android:id="@+id/trade_stock_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/trade_stock_symbol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/trade_stock_symbol"
+        tools:src="@drawable/ic_tag_us" />
+
+    <com.tik.android.component.widget.MediumTextView
+        android:id="@+id/trade_stock_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/itemTitleColor"
+        android:textSize="@dimen/text_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trade_stock_currency"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00700" />
+
+    <TextView
+        android:id="@+id/trade_stock_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/itemSubTitleColor"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trade_stock_symbol"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="(TENCENT)" />
+
+    <TextView
+        android:id="@+id/trade_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="委托失败"
+        android:textColor="@color/itemSubTitleColor"
+        android:textSize="@dimen/text_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/trade_stock_full_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

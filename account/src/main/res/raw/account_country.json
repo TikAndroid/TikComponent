@@ -1,0 +1,1217 @@
+[
+    {
+        "code": "+93", 
+        "country": "Afghanistan (‫افغانستان‬‎)", 
+        "language": "af"
+    }, 
+    {
+        "code": "+355", 
+        "country": "Albania (Shqipëri)", 
+        "language": "al"
+    }, 
+    {
+        "code": "+213", 
+        "country": "Algeria (‫الجزائر‬‎)", 
+        "language": "dz"
+    }, 
+    {
+        "code": "+1684", 
+        "country": "American Samoa", 
+        "language": "as"
+    }, 
+    {
+        "code": "+376", 
+        "country": "Andorra", 
+        "language": "ad"
+    }, 
+    {
+        "code": "+244", 
+        "country": "Angola", 
+        "language": "ao"
+    }, 
+    {
+        "code": "+1264", 
+        "country": "Anguilla", 
+        "language": "ai"
+    }, 
+    {
+        "code": "+1268", 
+        "country": "Antigua and Barbuda", 
+        "language": "ag"
+    }, 
+    {
+        "code": "+54", 
+        "country": "Argentina", 
+        "language": "ar"
+    }, 
+    {
+        "code": "+374", 
+        "country": "Armenia (Հայաստան)", 
+        "language": "am"
+    }, 
+    {
+        "code": "+297", 
+        "country": "Aruba", 
+        "language": "aw"
+    }, 
+    {
+        "code": "+61", 
+        "country": "Australia", 
+        "language": "au"
+    }, 
+    {
+        "code": "+43", 
+        "country": "Austria (Österreich)", 
+        "language": "at"
+    }, 
+    {
+        "code": "+994", 
+        "country": "Azerbaijan (Azərbaycan)", 
+        "language": "az"
+    }, 
+    {
+        "code": "+1242", 
+        "country": "Bahamas", 
+        "language": "bs"
+    }, 
+    {
+        "code": "+973", 
+        "country": "Bahrain (‫البحرين‬‎)", 
+        "language": "bh"
+    }, 
+    {
+        "code": "+880", 
+        "country": "Bangladesh (বাংলাদেশ)", 
+        "language": "bd"
+    }, 
+    {
+        "code": "+1246", 
+        "country": "Barbados", 
+        "language": "bb"
+    }, 
+    {
+        "code": "+375", 
+        "country": "Belarus (Беларусь)", 
+        "language": "by"
+    }, 
+    {
+        "code": "+32", 
+        "country": "Belgium (België)", 
+        "language": "be"
+    }, 
+    {
+        "code": "+501", 
+        "country": "Belize", 
+        "language": "bz"
+    }, 
+    {
+        "code": "+229", 
+        "country": "Benin (Bénin)", 
+        "language": "bj"
+    }, 
+    {
+        "code": "+1441", 
+        "country": "Bermuda", 
+        "language": "bm"
+    }, 
+    {
+        "code": "+975", 
+        "country": "Bhutan (འབྲུག)", 
+        "language": "bt"
+    }, 
+    {
+        "code": "+591", 
+        "country": "Bolivia", 
+        "language": "bo"
+    }, 
+    {
+        "code": "+387", 
+        "country": "Bosnia and Herzegovina (Босна и Херцеговина)", 
+        "language": "ba"
+    }, 
+    {
+        "code": "+267", 
+        "country": "Botswana", 
+        "language": "bw"
+    }, 
+    {
+        "code": "+55", 
+        "country": "Brazil (Brasil)", 
+        "language": "br"
+    }, 
+    {
+        "code": "+246", 
+        "country": "British Indian Ocean Territory", 
+        "language": "io"
+    }, 
+    {
+        "code": "+1284", 
+        "country": "British Virgin Islands", 
+        "language": "vg"
+    }, 
+    {
+        "code": "+673", 
+        "country": "Brunei", 
+        "language": "bn"
+    }, 
+    {
+        "code": "+359", 
+        "country": "Bulgaria (България)", 
+        "language": "bg"
+    }, 
+    {
+        "code": "+226", 
+        "country": "Burkina Faso", 
+        "language": "bf"
+    }, 
+    {
+        "code": "+257", 
+        "country": "Burundi (Uburundi)", 
+        "language": "bi"
+    }, 
+    {
+        "code": "+855", 
+        "country": "Cambodia (កម្ពុជា)", 
+        "language": "kh"
+    }, 
+    {
+        "code": "+237", 
+        "country": "Cameroon (Cameroun)", 
+        "language": "cm"
+    }, 
+    {
+        "code": "+1", 
+        "country": "Canada", 
+        "language": "ca"
+    }, 
+    {
+        "code": "+238", 
+        "country": "Cape Verde (Kabu Verdi)", 
+        "language": "cv"
+    }, 
+    {
+        "code": "+599", 
+        "country": "Caribbean Netherlands", 
+        "language": "bq"
+    }, 
+    {
+        "code": "+1345", 
+        "country": "Cayman Islands", 
+        "language": "ky"
+    }, 
+    {
+        "code": "+236", 
+        "country": "Central African Republic (République centrafricaine)", 
+        "language": "cf"
+    }, 
+    {
+        "code": "+235", 
+        "country": "Chad (Tchad)", 
+        "language": "td"
+    }, 
+    {
+        "code": "+56", 
+        "country": "Chile", 
+        "language": "cl"
+    }, 
+    {
+        "code": "+86", 
+        "country": "China (中国)", 
+        "language": "cn"
+    }, 
+    {
+        "code": "+61", 
+        "country": "Christmas Island", 
+        "language": "cx"
+    }, 
+    {
+        "code": "+61", 
+        "country": "Cocos (Keeling) Islands", 
+        "language": "cc"
+    }, 
+    {
+        "code": "+57", 
+        "country": "Colombia", 
+        "language": "co"
+    }, 
+    {
+        "code": "+269", 
+        "country": "Comoros (‫جزر القمر‬‎)", 
+        "language": "km"
+    }, 
+    {
+        "code": "+243", 
+        "country": "Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)", 
+        "language": "cd"
+    }, 
+    {
+        "code": "+242", 
+        "country": "Congo (Republic) (Congo-Brazzaville)", 
+        "language": "cg"
+    }, 
+    {
+        "code": "+682", 
+        "country": "Cook Islands", 
+        "language": "ck"
+    }, 
+    {
+        "code": "+506", 
+        "country": "Costa Rica", 
+        "language": "cr"
+    }, 
+    {
+        "code": "+225", 
+        "country": "Côte d’Ivoire", 
+        "language": "ci"
+    }, 
+    {
+        "code": "+385", 
+        "country": "Croatia (Hrvatska)", 
+        "language": "hr"
+    }, 
+    {
+        "code": "+53", 
+        "country": "Cuba", 
+        "language": "cu"
+    }, 
+    {
+        "code": "+599", 
+        "country": "Curaçao", 
+        "language": "cw"
+    }, 
+    {
+        "code": "+357", 
+        "country": "Cyprus (Κύπρος)", 
+        "language": "cy"
+    }, 
+    {
+        "code": "+420", 
+        "country": "Czech Republic (Česká republika)", 
+        "language": "cz"
+    }, 
+    {
+        "code": "+45", 
+        "country": "Denmark (Danmark)", 
+        "language": "dk"
+    }, 
+    {
+        "code": "+253", 
+        "country": "Djibouti", 
+        "language": "dj"
+    }, 
+    {
+        "code": "+1767", 
+        "country": "Dominica", 
+        "language": "dm"
+    }, 
+    {
+        "code": "+1", 
+        "country": "Dominican Republic (República Dominicana)", 
+        "language": "do"
+    }, 
+    {
+        "code": "+593", 
+        "country": "Ecuador", 
+        "language": "ec"
+    }, 
+    {
+        "code": "+20", 
+        "country": "Egypt (‫مصر‬‎)", 
+        "language": "eg"
+    }, 
+    {
+        "code": "+503", 
+        "country": "El Salvador", 
+        "language": "sv"
+    }, 
+    {
+        "code": "+240", 
+        "country": "Equatorial Guinea (Guinea Ecuatorial)", 
+        "language": "gq"
+    }, 
+    {
+        "code": "+291", 
+        "country": "Eritrea", 
+        "language": "er"
+    }, 
+    {
+        "code": "+372", 
+        "country": "Estonia (Eesti)", 
+        "language": "ee"
+    }, 
+    {
+        "code": "+251", 
+        "country": "Ethiopia", 
+        "language": "et"
+    }, 
+    {
+        "code": "+500", 
+        "country": "Falkland Islands (Islas Malvinas)", 
+        "language": "fk"
+    }, 
+    {
+        "code": "+298", 
+        "country": "Faroe Islands (Føroyar)", 
+        "language": "fo"
+    }, 
+    {
+        "code": "+679", 
+        "country": "Fiji", 
+        "language": "fj"
+    }, 
+    {
+        "code": "+358", 
+        "country": "Finland (Suomi)", 
+        "language": "fi"
+    }, 
+    {
+        "code": "+33", 
+        "country": "France", 
+        "language": "fr"
+    }, 
+    {
+        "code": "+594", 
+        "country": "French Guiana (Guyane française)", 
+        "language": "gf"
+    }, 
+    {
+        "code": "+689", 
+        "country": "French Polynesia (Polynésie française)", 
+        "language": "pf"
+    }, 
+    {
+        "code": "+241", 
+        "country": "Gabon", 
+        "language": "ga"
+    }, 
+    {
+        "code": "+220", 
+        "country": "Gambia", 
+        "language": "gm"
+    }, 
+    {
+        "code": "+995", 
+        "country": "Georgia (საქართველო)", 
+        "language": "ge"
+    }, 
+    {
+        "code": "+49", 
+        "country": "Germany (Deutschland)", 
+        "language": "de"
+    }, 
+    {
+        "code": "+233", 
+        "country": "Ghana (Gaana)", 
+        "language": "gh"
+    }, 
+    {
+        "code": "+350", 
+        "country": "Gibraltar", 
+        "language": "gi"
+    }, 
+    {
+        "code": "+30", 
+        "country": "Greece (Ελλάδα)", 
+        "language": "gr"
+    }, 
+    {
+        "code": "+299", 
+        "country": "Greenland (Kalaallit Nunaat)", 
+        "language": "gl"
+    }, 
+    {
+        "code": "+1473", 
+        "country": "Grenada", 
+        "language": "gd"
+    }, 
+    {
+        "code": "+590", 
+        "country": "Guadeloupe", 
+        "language": "gp"
+    }, 
+    {
+        "code": "+1671", 
+        "country": "Guam", 
+        "language": "gu"
+    }, 
+    {
+        "code": "+502", 
+        "country": "Guatemala", 
+        "language": "gt"
+    }, 
+    {
+        "code": "+44", 
+        "country": "Guernsey", 
+        "language": "gg"
+    }, 
+    {
+        "code": "+224", 
+        "country": "Guinea (Guinée)", 
+        "language": "gn"
+    }, 
+    {
+        "code": "+245", 
+        "country": "Guinea-Bissau (Guiné Bissau)", 
+        "language": "gw"
+    }, 
+    {
+        "code": "+592", 
+        "country": "Guyana", 
+        "language": "gy"
+    }, 
+    {
+        "code": "+509", 
+        "country": "Haiti", 
+        "language": "ht"
+    }, 
+    {
+        "code": "+504", 
+        "country": "Honduras", 
+        "language": "hn"
+    }, 
+    {
+        "code": "+852", 
+        "country": "Hong Kong (中國香港)", 
+        "language": "hk"
+    }, 
+    {
+        "code": "+36", 
+        "country": "Hungary (Magyarország)", 
+        "language": "hu"
+    }, 
+    {
+        "code": "+354", 
+        "country": "Iceland (Ísland)", 
+        "language": "is"
+    }, 
+    {
+        "code": "+91", 
+        "country": "India (भारत)", 
+        "language": "in"
+    }, 
+    {
+        "code": "+62", 
+        "country": "Indonesia", 
+        "language": "id"
+    }, 
+    {
+        "code": "+98", 
+        "country": "Iran (‫ایران‬‎)", 
+        "language": "ir"
+    }, 
+    {
+        "code": "+964", 
+        "country": "Iraq (‫العراق‬‎)", 
+        "language": "iq"
+    }, 
+    {
+        "code": "+353", 
+        "country": "Ireland", 
+        "language": "ie"
+    }, 
+    {
+        "code": "+44", 
+        "country": "Isle of Man", 
+        "language": "im"
+    }, 
+    {
+        "code": "+972", 
+        "country": "Israel (‫ישראל‬‎)", 
+        "language": "il"
+    }, 
+    {
+        "code": "+39", 
+        "country": "Italy (Italia)", 
+        "language": "it"
+    }, 
+    {
+        "code": "+1876", 
+        "country": "Jamaica", 
+        "language": "jm"
+    }, 
+    {
+        "code": "+81", 
+        "country": "Japan (日本)", 
+        "language": "jp"
+    }, 
+    {
+        "code": "+44", 
+        "country": "Jersey", 
+        "language": "je"
+    }, 
+    {
+        "code": "+962", 
+        "country": "Jordan (‫الأردن‬‎)", 
+        "language": "jo"
+    }, 
+    {
+        "code": "+7", 
+        "country": "Kazakhstan (Казахстан)", 
+        "language": "kz"
+    }, 
+    {
+        "code": "+254", 
+        "country": "Kenya", 
+        "language": "ke"
+    }, 
+    {
+        "code": "+686", 
+        "country": "Kiribati", 
+        "language": "ki"
+    }, 
+    {
+        "code": "+383", 
+        "country": "Kosovo", 
+        "language": "xk"
+    }, 
+    {
+        "code": "+965", 
+        "country": "Kuwait (‫الكويت‬‎)", 
+        "language": "kw"
+    }, 
+    {
+        "code": "+996", 
+        "country": "Kyrgyzstan (Кыргызстан)", 
+        "language": "kg"
+    }, 
+    {
+        "code": "+856", 
+        "country": "Laos (ລາວ)", 
+        "language": "la"
+    }, 
+    {
+        "code": "+371", 
+        "country": "Latvia (Latvija)", 
+        "language": "lv"
+    }, 
+    {
+        "code": "+961", 
+        "country": "Lebanon (‫لبنان‬‎)", 
+        "language": "lb"
+    }, 
+    {
+        "code": "+266", 
+        "country": "Lesotho", 
+        "language": "ls"
+    }, 
+    {
+        "code": "+231", 
+        "country": "Liberia", 
+        "language": "lr"
+    }, 
+    {
+        "code": "+218", 
+        "country": "Libya (‫ليبيا‬‎)", 
+        "language": "ly"
+    }, 
+    {
+        "code": "+423", 
+        "country": "Liechtenstein", 
+        "language": "li"
+    }, 
+    {
+        "code": "+370", 
+        "country": "Lithuania (Lietuva)", 
+        "language": "lt"
+    }, 
+    {
+        "code": "+352", 
+        "country": "Luxembourg", 
+        "language": "lu"
+    }, 
+    {
+        "code": "+853", 
+        "country": "Macau (中國澳門)", 
+        "language": "mo"
+    }, 
+    {
+        "code": "+389", 
+        "country": "Macedonia (FYROM) (Македонија)", 
+        "language": "mk"
+    }, 
+    {
+        "code": "+261", 
+        "country": "Madagascar (Madagasikara)", 
+        "language": "mg"
+    }, 
+    {
+        "code": "+265", 
+        "country": "Malawi", 
+        "language": "mw"
+    }, 
+    {
+        "code": "+60", 
+        "country": "Malaysia", 
+        "language": "my"
+    }, 
+    {
+        "code": "+960", 
+        "country": "Maldives", 
+        "language": "mv"
+    }, 
+    {
+        "code": "+223", 
+        "country": "Mali", 
+        "language": "ml"
+    }, 
+    {
+        "code": "+356", 
+        "country": "Malta", 
+        "language": "mt"
+    }, 
+    {
+        "code": "+692", 
+        "country": "Marshall Islands", 
+        "language": "mh"
+    }, 
+    {
+        "code": "+596", 
+        "country": "Martinique", 
+        "language": "mq"
+    }, 
+    {
+        "code": "+222", 
+        "country": "Mauritania (‫موريتانيا‬‎)", 
+        "language": "mr"
+    }, 
+    {
+        "code": "+230", 
+        "country": "Mauritius (Moris)", 
+        "language": "mu"
+    }, 
+    {
+        "code": "+262", 
+        "country": "Mayotte", 
+        "language": "yt"
+    }, 
+    {
+        "code": "+52", 
+        "country": "Mexico (México)", 
+        "language": "mx"
+    }, 
+    {
+        "code": "+691", 
+        "country": "Micronesia", 
+        "language": "fm"
+    }, 
+    {
+        "code": "+373", 
+        "country": "Moldova (Republica Moldova)", 
+        "language": "md"
+    }, 
+    {
+        "code": "+377", 
+        "country": "Monaco", 
+        "language": "mc"
+    }, 
+    {
+        "code": "+976", 
+        "country": "Mongolia (Монгол)", 
+        "language": "mn"
+    }, 
+    {
+        "code": "+382", 
+        "country": "Montenegro (Crna Gora)", 
+        "language": "me"
+    }, 
+    {
+        "code": "+1664", 
+        "country": "Montserrat", 
+        "language": "ms"
+    }, 
+    {
+        "code": "+212", 
+        "country": "Morocco (‫المغرب‬‎)", 
+        "language": "ma"
+    }, 
+    {
+        "code": "+258", 
+        "country": "Mozambique (Moçambique)", 
+        "language": "mz"
+    }, 
+    {
+        "code": "+95", 
+        "country": "Myanmar (Burma) (မြန်မာ)", 
+        "language": "mm"
+    }, 
+    {
+        "code": "+264", 
+        "country": "Namibia (Namibië)", 
+        "language": "na"
+    }, 
+    {
+        "code": "+674", 
+        "country": "Nauru", 
+        "language": "nr"
+    }, 
+    {
+        "code": "+977", 
+        "country": "Nepal (नेपाल)", 
+        "language": "np"
+    }, 
+    {
+        "code": "+31", 
+        "country": "Netherlands (Nederland)", 
+        "language": "nl"
+    }, 
+    {
+        "code": "+687", 
+        "country": "New Caledonia (Nouvelle-Calédonie)", 
+        "language": "nc"
+    }, 
+    {
+        "code": "+64", 
+        "country": "New Zealand", 
+        "language": "nz"
+    }, 
+    {
+        "code": "+505", 
+        "country": "Nicaragua", 
+        "language": "ni"
+    }, 
+    {
+        "code": "+227", 
+        "country": "Niger (Nijar)", 
+        "language": "ne"
+    }, 
+    {
+        "code": "+234", 
+        "country": "Nigeria", 
+        "language": "ng"
+    }, 
+    {
+        "code": "+683", 
+        "country": "Niue", 
+        "language": "nu"
+    }, 
+    {
+        "code": "+672", 
+        "country": "Norfolk Island", 
+        "language": "nf"
+    }, 
+    {
+        "code": "+850", 
+        "country": "North Korea (조선 민주주의 인민 공화국)", 
+        "language": "kp"
+    }, 
+    {
+        "code": "+1670", 
+        "country": "Northern Mariana Islands", 
+        "language": "mp"
+    }, 
+    {
+        "code": "+47", 
+        "country": "Norway (Norge)", 
+        "language": "no"
+    }, 
+    {
+        "code": "+968", 
+        "country": "Oman (‫عُمان‬‎)", 
+        "language": "om"
+    }, 
+    {
+        "code": "+92", 
+        "country": "Pakistan (‫پاکستان‬‎)", 
+        "language": "pk"
+    }, 
+    {
+        "code": "+680", 
+        "country": "Palau", 
+        "language": "pw"
+    }, 
+    {
+        "code": "+970", 
+        "country": "Palestine (‫فلسطين‬‎)", 
+        "language": "ps"
+    }, 
+    {
+        "code": "+507", 
+        "country": "Panama (Panamá)", 
+        "language": "pa"
+    }, 
+    {
+        "code": "+675", 
+        "country": "Papua New Guinea", 
+        "language": "pg"
+    }, 
+    {
+        "code": "+595", 
+        "country": "Paraguay", 
+        "language": "py"
+    }, 
+    {
+        "code": "+51", 
+        "country": "Peru (Perú)", 
+        "language": "pe"
+    }, 
+    {
+        "code": "+63", 
+        "country": "Philippines", 
+        "language": "ph"
+    }, 
+    {
+        "code": "+48", 
+        "country": "Poland (Polska)", 
+        "language": "pl"
+    }, 
+    {
+        "code": "+351", 
+        "country": "Portugal", 
+        "language": "pt"
+    }, 
+    {
+        "code": "+1", 
+        "country": "Puerto Rico", 
+        "language": "pr"
+    }, 
+    {
+        "code": "+974", 
+        "country": "Qatar (‫قطر‬‎)", 
+        "language": "qa"
+    }, 
+    {
+        "code": "+262", 
+        "country": "Réunion (La Réunion)", 
+        "language": "re"
+    }, 
+    {
+        "code": "+40", 
+        "country": "Romania (România)", 
+        "language": "ro"
+    }, 
+    {
+        "code": "+7", 
+        "country": "Russia (Россия)", 
+        "language": "ru"
+    }, 
+    {
+        "code": "+250", 
+        "country": "Rwanda", 
+        "language": "rw"
+    }, 
+    {
+        "code": "+590", 
+        "country": "Saint Barthélemy (Saint-Barthélemy)", 
+        "language": "bl"
+    }, 
+    {
+        "code": "+290", 
+        "country": "Saint Helena", 
+        "language": "sh"
+    }, 
+    {
+        "code": "+1869", 
+        "country": "Saint Kitts and Nevis", 
+        "language": "kn"
+    }, 
+    {
+        "code": "+1758", 
+        "country": "Saint Lucia", 
+        "language": "lc"
+    }, 
+    {
+        "code": "+590", 
+        "country": "Saint Martin (Saint-Martin (partie française))", 
+        "language": "mf"
+    }, 
+    {
+        "code": "+508", 
+        "country": "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)", 
+        "language": "pm"
+    }, 
+    {
+        "code": "+1784", 
+        "country": "Saint Vincent and the Grenadines", 
+        "language": "vc"
+    }, 
+    {
+        "code": "+685", 
+        "country": "Samoa", 
+        "language": "ws"
+    }, 
+    {
+        "code": "+378", 
+        "country": "San Marino", 
+        "language": "sm"
+    }, 
+    {
+        "code": "+239", 
+        "country": "São Tomé and Príncipe (São Tomé e Príncipe)", 
+        "language": "st"
+    }, 
+    {
+        "code": "+966", 
+        "country": "Saudi Arabia (‫المملكة العربية السعودية‬‎)", 
+        "language": "sa"
+    }, 
+    {
+        "code": "+221", 
+        "country": "Senegal (Sénégal)", 
+        "language": "sn"
+    }, 
+    {
+        "code": "+381", 
+        "country": "Serbia (Србија)", 
+        "language": "rs"
+    }, 
+    {
+        "code": "+248", 
+        "country": "Seychelles", 
+        "language": "sc"
+    }, 
+    {
+        "code": "+232", 
+        "country": "Sierra Leone", 
+        "language": "sl"
+    }, 
+    {
+        "code": "+65", 
+        "country": "Singapore", 
+        "language": "sg"
+    }, 
+    {
+        "code": "+1721", 
+        "country": "Sint Maarten", 
+        "language": "sx"
+    }, 
+    {
+        "code": "+421", 
+        "country": "Slovakia (Slovensko)", 
+        "language": "sk"
+    }, 
+    {
+        "code": "+386", 
+        "country": "Slovenia (Slovenija)", 
+        "language": "si"
+    }, 
+    {
+        "code": "+677", 
+        "country": "Solomon Islands", 
+        "language": "sb"
+    }, 
+    {
+        "code": "+252", 
+        "country": "Somalia (Soomaaliya)", 
+        "language": "so"
+    }, 
+    {
+        "code": "+27", 
+        "country": "South Africa", 
+        "language": "za"
+    }, 
+    {
+        "code": "+82", 
+        "country": "South Korea (대한민국)", 
+        "language": "kr"
+    }, 
+    {
+        "code": "+211", 
+        "country": "South Sudan (‫جنوب السودان‬‎)", 
+        "language": "ss"
+    }, 
+    {
+        "code": "+34", 
+        "country": "Spain (España)", 
+        "language": "es"
+    }, 
+    {
+        "code": "+94", 
+        "country": "Sri Lanka (ශ්‍රී ලංකාව)", 
+        "language": "lk"
+    }, 
+    {
+        "code": "+249", 
+        "country": "Sudan (‫السودان‬‎)", 
+        "language": "sd"
+    }, 
+    {
+        "code": "+597", 
+        "country": "Suriname", 
+        "language": "sr"
+    }, 
+    {
+        "code": "+47", 
+        "country": "Svalbard and Jan Mayen", 
+        "language": "sj"
+    }, 
+    {
+        "code": "+268", 
+        "country": "Swaziland", 
+        "language": "sz"
+    }, 
+    {
+        "code": "+46", 
+        "country": "Sweden (Sverige)", 
+        "language": "se"
+    }, 
+    {
+        "code": "+41", 
+        "country": "Switzerland (Schweiz)", 
+        "language": "ch"
+    }, 
+    {
+        "code": "+963", 
+        "country": "Syria (‫سوريا‬‎)", 
+        "language": "sy"
+    }, 
+    {
+        "code": "+886", 
+        "country": "Taiwan (中國台灣)", 
+        "language": "tw"
+    }, 
+    {
+        "code": "+992", 
+        "country": "Tajikistan", 
+        "language": "tj"
+    }, 
+    {
+        "code": "+255", 
+        "country": "Tanzania", 
+        "language": "tz"
+    }, 
+    {
+        "code": "+66", 
+        "country": "Thailand (ไทย)", 
+        "language": "th"
+    }, 
+    {
+        "code": "+670", 
+        "country": "Timor-Leste", 
+        "language": "tl"
+    }, 
+    {
+        "code": "+228", 
+        "country": "Togo", 
+        "language": "tg"
+    }, 
+    {
+        "code": "+690", 
+        "country": "Tokelau", 
+        "language": "tk"
+    }, 
+    {
+        "code": "+676", 
+        "country": "Tonga", 
+        "language": "to"
+    }, 
+    {
+        "code": "+1868", 
+        "country": "Trinidad and Tobago", 
+        "language": "tt"
+    }, 
+    {
+        "code": "+216", 
+        "country": "Tunisia (‫تونس‬‎)", 
+        "language": "tn"
+    }, 
+    {
+        "code": "+90", 
+        "country": "Turkey (Türkiye)", 
+        "language": "tr"
+    }, 
+    {
+        "code": "+993", 
+        "country": "Turkmenistan", 
+        "language": "tm"
+    }, 
+    {
+        "code": "+1649", 
+        "country": "Turks and Caicos Islands", 
+        "language": "tc"
+    }, 
+    {
+        "code": "+688", 
+        "country": "Tuvalu", 
+        "language": "tv"
+    }, 
+    {
+        "code": "+1340", 
+        "country": "U.S. Virgin Islands", 
+        "language": "vi"
+    }, 
+    {
+        "code": "+256", 
+        "country": "Uganda", 
+        "language": "ug"
+    }, 
+    {
+        "code": "+380", 
+        "country": "Ukraine (Україна)", 
+        "language": "ua"
+    }, 
+    {
+        "code": "+971", 
+        "country": "United Arab Emirates (‫الإمارات العربية المتحدة‬‎)", 
+        "language": "uae"
+    }, 
+    {
+        "code": "+44", 
+        "country": "United Kingdom", 
+        "language": "uk"
+    }, 
+    {
+        "code": "+1", 
+        "country": "United States", 
+        "language": "us"
+    }, 
+    {
+        "code": "+598", 
+        "country": "Uruguay", 
+        "language": "uy"
+    }, 
+    {
+        "code": "+998", 
+        "country": "Uzbekistan (Oʻzbekiston)", 
+        "language": "uz"
+    }, 
+    {
+        "code": "+678", 
+        "country": "Vanuatu", 
+        "language": "vu"
+    }, 
+    {
+        "code": "+39", 
+        "country": "Vatican City (Città del Vaticano)", 
+        "language": "va"
+    }, 
+    {
+        "code": "+58", 
+        "country": "Venezuela", 
+        "language": "ve"
+    }, 
+    {
+        "code": "+84", 
+        "country": "Vietnam (Việt Nam)", 
+        "language": "vn"
+    }, 
+    {
+        "code": "+681", 
+        "country": "Wallis and Futuna", 
+        "language": "wf"
+    }, 
+    {
+        "code": "+212", 
+        "country": "Western Sahara (‫الصحراء الغربية‬‎)", 
+        "language": "eh"
+    }, 
+    {
+        "code": "+967", 
+        "country": "Yemen (‫اليمن‬‎)", 
+        "language": "ye"
+    }, 
+    {
+        "code": "+260", 
+        "country": "Zambia", 
+        "language": "zm"
+    }, 
+    {
+        "code": "+263", 
+        "country": "Zimbabwe", 
+        "language": "zw"
+    }, 
+    {
+        "code": "+358", 
+        "country": "Åland Islands", 
+        "language": "ax"
+    }
+]

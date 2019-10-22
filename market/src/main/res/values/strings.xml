@@ -1,0 +1,43 @@
+<resources>
+    <string name="market_app_name">market</string>
+    <string name="market_search_cancel">取消</string>
+    <string name="market_string_chart_month_k">月K</string>
+    <string name="market_string_chart_week_k">周k</string>
+    <string name="market_string_chart_day_k">日K</string>
+    <string name="market_string_chart_default_k">分时</string>
+    <string name="market_string_price_value_high">最高</string>
+    <string name="market_string_price_value_low">最低</string>
+    <string name="market_string_price_value_close">昨收</string>
+    <string name="market_string_price_value_open">今开</string>
+    <string name="market_string_price_value_volume">成交量</string>
+    <string name="market_string_stock_market_close">未开盘</string>
+    <string name="market_string_stock_market_open">盘中</string>
+    <string name="market_string_price_value_curr">价格</string>
+    <string name="market_string_5_minute">5分</string>
+    <string name="market_string_15_minute">15分</string>
+    <string name="market_string_30_minute">30分</string>
+    <string name="market_string_60_minute">60分</string>
+    <string name="market_dialog_cancel">取消</string>
+    <string name="market_string_search_stock_hint">股票代码/名称</string>
+    <string name="market_string_search_empty_hint_first">未匹配到相关股票\n建议通过代码搜索</string>
+    <string name="market_string_search_empty_hint_second">建议通过代码搜索</string>
+    <string name="market_string_search_history">搜索历史</string>
+    <string name="market_string_clear_search_history">清空</string>
+    <string name="market_string_user_favor">自选</string>
+    <string name="market_string_currency_usd">美股</string>
+    <string name="market_string_currency_hkd">港股</string>
+    <string name="market_string_tool_bar_title">行情</string>
+
+    <string name="market_string_tab_name">股票名称</string>
+    <string name="market_string_tab_price">最新价</string>
+    <string name="market_string_tab_gains">涨跌幅</string>
+    <string name="market_string_chart_data_null">图表数据获取失败</string>
+    <string name="market_string_no_favor">点击添加自选股票</string>
+    <string name="market_string_add_favor_success">添加自选成功</string>
+    <string name="market_string_delete_favor_success">删除自选成功</string>
+    <string name="market_chart_1_minute_unsupport">该类型只支持分时图</string>
+    <string name="market_chart_1_minute_unsupport_turn">该类型只支持分时图，已由k线模式切换为分时模式</string>
+    <string name="market_string_stock_market_lunch">中午休市</string>
+    <string name="market_string_stock_market_holiday">节假日休市</string>
+    <string name="market_string_stock_market_weekend">周末休市</string>
+</resources>

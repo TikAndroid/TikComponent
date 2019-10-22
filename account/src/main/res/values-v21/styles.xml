@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AccountBaseTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/account_highlight</item>
+    </style>
+
+
+    <style name="AccountImageButtonStyle">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:stateListAnimator">@animator/account_selector_animator</item>
+        <item name="android:background">@drawable/account_ripple</item>
+    </style>
+
+    <style name="AccountTitleBarStyle" parent="Toolbar">
+    </style>
+</resources>

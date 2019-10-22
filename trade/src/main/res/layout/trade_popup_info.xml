@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="225dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/trade_bg_popup_info"
+    android:padding="@dimen/margin_general">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextStyle.Little"
+            android:textColor="@color/text_deactive"
+            android:text="@string/trade_popup_info_label_fee"/>
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/trade_tv_popup_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextStyle.Medium"
+            android:textColor="@color/text_inverse"
+            android:text="0.2% 0%"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_general"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextStyle.Little"
+            android:textColor="@color/text_deactive"
+            android:text="@string/trade_popup_info_label_rate"/>
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/trade_tv_popup_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextStyle.Medium"
+            android:textColor="@color/text_inverse"
+            android:text="1 USDT=7.6971 HKD"
+            android:gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>

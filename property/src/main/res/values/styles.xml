@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="property_grey_11" parent="base_layout">
+        <item name="android:textColor">@color/property_text_grey</item>
+        <item name="android:textSize">@dimen/text_11</item>
+    </style>
+
+    <style name="property_grey_12" parent="base_layout">
+        <item name="android:textColor">@color/property_text_grey</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="property_grey_14" parent="base_layout">
+        <item name="android:textColor">@color/property_text_grey</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="property_black_12" parent="base_layout">
+        <item name="android:textColor">@color/property_text_black</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="property_black_14" parent="base_layout">
+        <item name="android:textColor">@color/property_text_black</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="property_black_15" parent="base_layout">
+        <item name="android:textColor">@color/property_text_black</item>
+        <item name="android:textSize">@dimen/text_15</item>
+    </style>
+
+    <style name="property_black_16" parent="base_layout">
+        <item name="android:textColor">@color/property_text_black</item>
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="property_black_32" parent="base_layout">
+        <item name="android:textColor">@color/property_text_black</item>
+        <item name="android:textSize">@dimen/property_text_32</item>
+    </style>
+
+    <style name="property_blue_14" parent="base_layout">
+        <item name="android:textColor">@color/property_text_blue</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+</resources>

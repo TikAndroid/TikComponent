@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--order style-->
+    <style name="TradeOrderFilterContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/trade_detail_title_height</item>
+        <item name="android:paddingLeft">@dimen/trade_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/trade_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/toolbar_window_offset</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="TradeOrderFilterTitle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/trade_filter_text_max_width</item>
+        <item name="android:background">@drawable/trade_selector_order_filter_tittle</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/trade_order_filter_title_state</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/trade_horizontal_margin</item>
+        <item name="android:padding">@dimen/dimen_6</item>
+    </style>
+
+    <style name="TradeTextStyle.Large" parent="TextStyle">
+        <item name="android:textSize">@dimen/primary_page_text</item>
+    </style>
+
+    <style name="TradeQuickNumberButton">
+        <item name="android:background">@drawable/trade_selector_quick_number_btn</item>
+    </style>
+
+    <style name="TradeTitleStyle">
+        <item name="android:layout_height">@dimen/trade_detail_title_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/trade_title_detail</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:lineSpacingExtra">@dimen/text_medium</item>
+    </style>
+    <style name="TradeTitleBackStyle" parent="@style/TitleClickableImageStyle">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="TradeOrderDetail">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TradeOrderDetail.Title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/itemTitleColor</item>
+        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="TradeOrderDetail.Info">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/itemTitleColor</item>
+        <item name="android:gravity">right|end|center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- parent="TradeElevation"-->
+    <style name="TradeOrderDetail.Container">
+        <item name="android:layout_marginTop">@dimen/margin_general</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin</item>
+        <item name="android:layout_marginRight">@dimen/card_margin</item>
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+    <style name="TradeOrderDetail.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/trade_detail_status_header</item>
+        <item name="android:paddingStart">@dimen/dimen_12</item>
+        <item name="android:paddingEnd">@dimen/dimen_12</item>
+    </style>
+    <style name="TradeOrderDetail.ItemSub">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/trade_detail_status_item</item>
+    </style>
+    <style name="TradeOrderDetail.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:padding">@dimen/card_margin</item>
+    </style>
+
+    <style name="TradeOrderDetail.Status">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/trade_detail_status_item</item>
+        <item name="android:background">@drawable/trade_selector_top_white_r8</item>
+        <item name="android:paddingStart">@dimen/dimen_12</item>
+        <item name="android:paddingEnd">@dimen/dimen_12</item>
+    </style>
+
+    <style name="TradeOrderDetailBottomContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_general</item>
+        <item name="android:layout_marginRight">@dimen/margin_general</item>
+        <item name="android:paddingTop">@dimen/dimen_7</item>
+        <item name="android:paddingBottom">@dimen/dimen_7</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="TradeOrderDetail.Bottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/trade_detail_bottom_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/trade_selector_single_gray_r4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textColor">@color/trade_text_color_order_detail_button</item>
+    </style>
+
+    <style name="TradeFilter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TradeFilter.Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dimen_12</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_12</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_8</item>
+        <item name="android:layout_marginRight">@dimen/dimen_8</item>
+    </style>
+    <style name="TradeFilter.Title">
+        <item name="android:textColor">@color/itemTitleColor</item>
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+    <style name="TradeFilter.SubTitle">
+        <item name="android:textColor">@color/itemSubTitleColor</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+</resources>

@@ -1,0 +1,16 @@
+apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    implementation deps.support.app_compat
+    implementation deps.support.design
+    testImplementation deps.junit
+    // for every single module
+    annotationProcessor deps.butterknife.compiler
+    androidTestImplementation deps.espresso.core
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+
+    implementation project(path: ':bussiness.base')
+}

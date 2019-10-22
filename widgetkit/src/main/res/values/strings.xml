@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">widgetkit</string>
+    <string name="placeholder_no_data">no data</string>
+    <string name="placeholder_error">data error</string>
+</resources>

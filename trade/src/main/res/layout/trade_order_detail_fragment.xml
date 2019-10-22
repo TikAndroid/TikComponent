@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frag_title"
+        style="@style/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/trade_order_detail_back"
+            style="@style/TradeTitleBackStyle"
+            android:src="@drawable/ic_title_back" />
+
+        <TextView
+            android:id="@+id/mine_tv_name"
+            style="@style/TradeTitleStyle"
+            android:text="@string/trade_order_detail_title"
+            android:textAppearance="@style/TextStyle.Title" />
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/trade_order_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/toolbar_window_offset"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@color/divider"
+            style="@style/TradeOrderDetail.Container">
+
+            <include layout="@layout/trade_order_detail_status"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trade_order_detail_listview"
+                style="@style/TradeOrderDetail.ListView" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include
+        android:id="@+id/trade_divider"
+        layout="@layout/divider_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/toolbar_window_offset"
+        style="@style/TradeOrderDetailBottomContainer">
+
+        <TextView
+            android:id="@+id/trade_order_cancel"
+            style="@style/TradeOrderDetail.Bottom"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/trade_order_cancel_btn"
+            tools:text="@string/trade_order_cancel_btn" />
+
+        <TextView
+            android:id="@+id/trade_order_detail_to_mark"
+            style="@style/TradeOrderDetail.Bottom"
+            android:text="@string/trade_view_detail"
+            tools:text="@string/trade_view_detail" />
+    </LinearLayout>
+</LinearLayout>

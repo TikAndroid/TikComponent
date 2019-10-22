@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:clipChildren="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_form_tab_buy"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/trade_selector_tab_buy"
+                android:gravity="center"
+                android:text="@string/trade_tab_buy"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/trade_text_color_title_buy"/>
+
+            <TextView
+                android:id="@+id/trade_form_tab_sale"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/trade_selector_tab_sale"
+                android:gravity="center"
+                android:text="@string/trade_tab_sale"
+                android:textAppearance="@style/TextStyle.Medium"
+                android:textColor="@color/trade_text_color_title_sale"/>
+        </LinearLayout>
+
+        <!--价格行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_form_tv_price"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:text="@string/trade_form_price_limit"
+                android:textAppearance="@style/TextStyle.Medium"/>
+
+            <ImageView
+                android:id="@+id/trade_form_btn_price_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trade_ic_minus"/>
+
+            <com.tik.android.component.widget.RegularEditText
+                android:id="@+id/trade_form_input_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:hint="@string/trade_price_input_hint"
+                android:textColorHint="@color/trade_form_input_hint"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:textAppearance="@style/TradeTextStyle.Large"/>
+
+            <ImageView
+                android:id="@+id/trade_form_btn_price_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:src="@drawable/trade_ic_plus"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider_vertical"/>
+
+        <!--数量行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_form_tv_number"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:text="@string/trade_form_number"
+                android:textAppearance="@style/TextStyle.Medium"/>
+
+            <ImageView
+                android:id="@+id/trade_form_btn_number_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trade_ic_minus"/>
+
+            <com.tik.android.component.widget.RegularEditText
+                android:id="@+id/trade_form_input_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:hint="@string/trade_number_input_hint"
+                android:textColorHint="@color/trade_form_input_hint"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned"
+                android:selectAllOnFocus="true"
+                android:textAppearance="@style/TradeTextStyle.Large"/>
+
+            <ImageView
+                android:id="@+id/trade_form_btn_number_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:src="@drawable/trade_ic_plus"/>
+        </LinearLayout>
+
+        <include layout="@layout/divider_vertical"/>
+
+        <!--汇率转换-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_label_real_amounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:text="@string/trade_real_amounts"/>
+
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/trade_real_amounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trade_label_usdt_amounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:text="@string/trade_form_tv_pay"/>
+
+            <com.tik.android.component.widget.MediumTextView
+                android:id="@+id/trade_usdt_amounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_general"
+                android:layout_marginEnd="@dimen/margin_general"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:textAppearance="@style/TextStyle.Medium"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_padding"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/card_padding"
+        android:layout_marginBottom="@dimen/margin_general"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/trade_form_btn_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trade_ic_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/trade_dimen_4"
+            android:text="@string/trade_info_detail"
+            android:textAppearance="@style/TextStyle.Little.Deactive"/>
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/trade_usable_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textAppearance="@style/TextStyle.Little.Deactive"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trade_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/card_padding"
+        android:layout_marginRight="@dimen/card_padding"
+        android:gravity="center"
+        android:textAppearance="@style/TextStyle.Primary.Inverse"/>
+
+</LinearLayout>

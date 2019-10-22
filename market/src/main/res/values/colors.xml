@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="market_translation_gray">#626262</color>
+    <color name="market_color_kline_line_path">#6182FF</color>
+    <color name="market_color_kline_shade_start">#5574CD</color>
+    <color name="market_color_kline_shade_end">#105574CD</color>
+    <color name="market_color_kline_shade_divide">#605574CD</color>
+    <color name="market_color_high_line">#D9D9D9</color>
+    <color name="market_color_bar_chart_positive">#FF9A9A</color>
+    <color name="market_color_bar_chart_negative"> #A3E1C1</color>
+    <color name="market_color_chart_page_root_bg"> #fff6f8fc</color>
+    <color name="market_color_chart_pull_popup_pressed"> #5F80FF</color>
+
+    <color name="market_color_search_header">@color/text_little_label</color>
+    <color name="market_color_search_clear">#AEB2C2</color>
+    <color name="market_color_search_cancel">@color/text_little_label</color>
+
+    <color name="market_color_chart_bottom_tab">#53627C</color>
+    <color name="market_color_chart_bottom_tab_select">#5E7FFF</color>
+    <color name="market_color_chart_line_average"> #E6E6E6</color>
+
+    <color name="market_color_gains_up"> #FF6666</color>
+    <color name="market_color_gains_down"> #4EC286</color>
+
+</resources>

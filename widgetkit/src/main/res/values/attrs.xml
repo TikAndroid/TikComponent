@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--带清除按钮的EditText-->
+    <declare-styleable name="EditTextField">
+        <!-- 清除按钮显示模式 -->
+        <attr name="clearButtonMode">
+            <!--不显示清空按钮-->
+            <enum name="never" value="0" />
+            <!--不为空，获得焦点与没有获得焦点都显示清空按钮-->
+            <enum name="always" value="1" />
+            <!--不为空，且在编辑状态时（及获得焦点）显示清空按钮-->
+            <enum name="whileEditing" value="2" />
+            <!--不为空，且不在编译状态时（焦点不在输入框上）显示清空按钮-->
+            <enum name="unlessEditing" value="3" />
+        </attr>
+        <attr name="clearButtonDrawable" format="reference"/>
+
+        <!-- 显示密码Button相关 -->
+        <attr name="enableSwitchPwd" format="boolean" />
+        <attr name="showPwdButtonDrawable" format="reference"/>
+        <attr name="hidePwdButtonDrawable" format="reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DecorationLayout">
+        <attr name="layout_decorAlign" format="enum">
+            <enum name="decor_align_start" value="-1"/>
+            <enum name="decor_align_end" value="-2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerificationCodeInput">
+        <attr name="code_length" format="integer" />
+        <attr name="is_password" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingItem">
+        <attr name="arrowVisible" format="boolean"/>
+        <attr name="title" format="reference|string"/>
+        <attr name="subtitle" format="reference|string"/>
+        <attr name="icon" format="reference"/>
+        <attr name="divider_color" format="color|reference"/>
+        <attr name="style" format="enum">
+            <enum name="single" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="mid" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DotSettingItem">
+        <attr name="dotRadius" format="dimension|integer"/>
+        <attr name="dotColor" format="color"/>
+    </declare-styleable>
+
+</resources>

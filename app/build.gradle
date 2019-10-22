@@ -1,0 +1,174 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.qiyi.svg.plugin'
+apply plugin: 'walle'
+apply plugin: 'bugly'
+
+walle {
+    // 指定渠道包的输出路径
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+    // 定制渠道包的APK的文件名称
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk';
+    // 渠道配置文件
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
+
+bugly {
+    appId = '65fc39df29'
+    appKey = '6418dc38-c396-405b-9936-9b3bf269d461'
+}
+
+android {
+    defaultConfig {
+        // name should be the same as RN
+        applicationId "com.tik.android.component"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+            universalApk true
+        }
+    }
+
+    signingConfigs {
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            storeFile
+            storePassword
+            keyAlias
+            keyPassword
+        }
+    }
+
+    getSigningProperties()
+
+    buildTypes {
+        debug {
+            // wechat need
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "OPEN_AUTO_SIZE", isOpenAutoSize.toString()
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFile('proguard-rules.pro')
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "OPEN_AUTO_SIZE", isOpenAutoSize.toString()
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    flavorDimensions "app"
+    //更换channel时需要同步给大家
+    productFlavors {
+        Product {
+            dimension "app"
+            manifestPlaceholders = [
+                    "SERVER_URL" : "https://api.tik.com/v",
+                    "APP_CHANNEL": "Product"
+            ]
+        }
+        DevTest {
+            dimension "app"
+            manifestPlaceholders = [
+                    "SERVER_URL" : "http://172.20.160.7:2016/v",
+                    "APP_CHANNEL": "Test"
+            ]
+        }
+
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs', '../account/libs'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
+    dexOptions {
+        maxProcessCount 8
+
+        //最大堆内存
+        javaMaxHeapSize "8g"
+        //是否支持大工程模式
+        jumboMode = true
+        //预编译
+        preDexLibraries = true
+        //线程数
+        threadCount 8
+    }
+
+    sourceSets { debug { java.srcDirs = ['src/debug/java', 'src/trace/java'] } }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation deps.support.app_compat
+    testImplementation deps.junit
+    implementation deps.constraint_layout
+
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+
+    annotationProcessor deps.butterknife.compiler
+    implementation project(path: ':information')
+    implementation project(path: ':market')
+    implementation project(path: ':mine')
+    implementation project(path: ':account')
+    implementation project(path: ':property')
+    implementation project(path: ':lib.common')
+    implementation project(path: ':trade')
+
+    implementation deps.BottomNavigationViewEx
+
+    implementation project(path: ':bussiness.base')
+
+    implementation deps.support.multidex
+
+    debugImplementation deps.aspectjrt
+}
+
+// read signing config
+def getSigningProperties() {
+    def propFile = file('../hox.signing')
+    if (propFile.exists() && propFile.canRead()) {
+        def props = new Properties()
+        props.load(new FileInputStream(propFile))
+        if (props.containsKey('store_file') && props.containsKey('store_password') &&
+                props.containsKey('key_alias') && props.containsKey('key_password')) {
+
+            android.signingConfigs.release.storeFile = file('../' + props['store_file'])
+            android.signingConfigs.release.storePassword = props['store_password']
+            android.signingConfigs.release.keyAlias = props['key_alias']
+            android.signingConfigs.release.keyPassword = props['key_password']
+        } else {
+            println 'hox.signing are found but some entries are missed!'
+            android.buildTypes.release.signingConfig = null
+        }
+    } else {
+        println 'hox.signing are not found!'
+        android.buildTypes.release.signingConfig = null
+    }
+}
+// release time
+static def releaseTime() {
+    return new Date().format("yy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+apply from: new File(rootDir, 'inject.gradle').absolutePath
+traceMethod project.android.applicationVariants
+

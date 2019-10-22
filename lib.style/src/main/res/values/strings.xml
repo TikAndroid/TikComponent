@@ -1,0 +1,7 @@
+<resources>
+    <string name="unknown">未知错误</string>
+    <string name="token_invalid">token失效</string>
+    <string name="self_watch">自选</string>
+    <string name="text_share">分享</string>
+    <string name="text_trade">交易</string>
+</resources>

@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar_Style_Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text_18</item>
+    </style>
+
+    <style name="Toolbar_Style_Layout">
+        <item name="android:background">@color/windowBackground</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Toolbar_TextAppearance_Black">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--for app title bar-->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+        <item name="android:background">@drawable/toolbar_title_bg</item>
+        <item name="android:paddingBottom">@dimen/toolbar_bottom_padding</item>
+    </style>
+
+    <style name="base_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="TextStyle">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+
+    <style name="TextStyle.Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyle.Primary" parent="TextStyle"></style>
+
+    <style name="TextStyle.Primary.Inverse">
+        <item name="android:textColor">@color/text_color_primary_inverse</item>
+    </style>
+
+    <style name="TextStyle.Primary.Highlight">
+        <item name="android:textColor">@color/text_color_highlight</item>
+    </style>
+
+    <style name="TextStyle.Medium" parent="TextStyle">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="TextStyle.Medium.Inverse">
+        <item name="android:textColor">@color/text_color_primary_inverse</item>
+    </style>
+
+    <style name="TextStyle.Medium.Highlight">
+        <item name="android:textColor">@color/text_color_highlight</item>
+    </style>
+
+    <style name="TextStyle.Medium.Deactive">
+        <item name="android:textColor">@color/text_deactive</item>
+    </style>
+
+    <style name="TextStyle.Little" parent="TextStyle">
+        <item name="android:textSize">@dimen/text_little</item>
+    </style>
+
+    <style name="TextStyle.Little.Inverse">
+        <item name="android:textColor">@color/text_color_primary_inverse</item>
+    </style>
+
+    <style name="TextStyle.Little.Highlight">
+        <item name="android:textColor">@color/text_color_highlight</item>
+    </style>
+
+    <style name="TextStyle.Little.Secondary">
+        <item name="android:textColor">@color/text_color_secondary</item>
+    </style>
+
+    <style name="TextStyle.Little.Deactive">
+        <item name="android:textColor">@color/text_deactive</item>
+    </style>
+
+    <style name="TitleClickableImageStyle">
+        <item name="android:layout_width">@dimen/toolbar_content_height</item>
+        <item name="android:layout_height">@dimen/toolbar_content_height</item>
+        <item name="android:scaleType">center</item>
+    </style>
+</resources>

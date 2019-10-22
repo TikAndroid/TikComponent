@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tik.android.component.trade.module.widget.AnimChartView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trade_anim_chart_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/trade_dimen_4"
+    android:background="@drawable/bg_card">
+
+</com.tik.android.component.trade.module.widget.AnimChartView>

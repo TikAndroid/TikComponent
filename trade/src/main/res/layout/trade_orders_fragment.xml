@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout style="@style/Toolbar">
+
+        <TextView
+            style="@style/TradeTitleStyle"
+            android:text="@string/trade_order_setting"
+            android:textAppearance="@style/TextStyle.Title"
+            tools:text="@string/trade_order_setting" />
+
+        <ImageView
+            android:id="@+id/trade_order_back"
+            style="@style/TradeTitleBackStyle"
+            android:src="@drawable/ic_title_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/TradeOrderFilterContainer">
+        <com.tik.android.component.widget.HoxTabLayout
+            android:id="@+id/trade_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include layout="@layout/divider_vertical"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:background="@color/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--for place holder-->
+        <LinearLayout
+            android:id="@+id/order_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trade_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:padding="@dimen/card_margin" />
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

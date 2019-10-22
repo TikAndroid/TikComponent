@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tmp_high_line_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tmp_high_line_divider"/>
+
+    <View
+        android:id="@+id/tmp_high_line_divider"
+        android:layout_width="@dimen/dimen_divider"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:background="@color/divider"
+        app:layout_constraintTop_toTopOf="@id/tmp_high_line_time"
+        app:layout_constraintBottom_toBottomOf="@id/tmp_high_line_time"
+        app:layout_constraintLeft_toRightOf="@+id/tmp_high_line_time"
+        app:layout_constraintRight_toLeftOf="@id/tmp_high_line_open_close"/>
+
+    <TextView
+        android:id="@+id/tmp_high_line_open_close"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="@id/tmp_high_line_time"
+        app:layout_constraintLeft_toRightOf="@id/tmp_high_line_divider"
+        app:layout_constraintRight_toLeftOf="@id/tmp_high_line_high_low"
+        app:layout_constraintTop_toTopOf="@id/tmp_high_line_time"/>
+
+    <TextView
+        android:id="@+id/tmp_high_line_high_low"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="@id/tmp_high_line_time"
+        app:layout_constraintLeft_toRightOf="@id/tmp_high_line_open_close"
+        app:layout_constraintRight_toLeftOf="@id/tmp_high_line_volume_gains"
+        app:layout_constraintTop_toTopOf="@id/tmp_high_line_time"/>
+
+    <TextView
+        android:id="@+id/tmp_high_line_volume_gains"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="@id/tmp_high_line_time"
+        app:layout_constraintLeft_toRightOf="@id/tmp_high_line_high_low"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tmp_high_line_time"/>
+
+</android.support.constraint.ConstraintLayout>

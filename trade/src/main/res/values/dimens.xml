@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="trade_setting_item_elevation">2dp</dimen>
+    <dimen name="trade_dimen_4">4dp</dimen>
+    <!--orders-->
+    <dimen name="trade_horizontal_margin">12dp</dimen>
+    <dimen name="trade_filter_text_max_width">90dp</dimen>
+    <dimen name="trade_filter_title_container_height">50dp</dimen>
+    <dimen name="trade_filter_title_top_padding">10dp</dimen>
+    <dimen name="trade_filter_title_bottom_padding">8dp</dimen>
+    <dimen name="trade_filter_title_corner_radius">4dp</dimen>
+    <dimen name="trade_detail_title_height">@dimen/toolbar_content_height</dimen>
+    <dimen name="trade_detail_status_header">64dp</dimen>
+    <dimen name="trade_detail_status_header2">75dp</dimen>
+    <!--64+11-->
+    <dimen name="trade_detail_status_item">36dp</dimen>
+    <dimen name="trade_detail_bottom_button">44dp</dimen>
+    <dimen name="trade_detail_listview_item_top_padding">10dp</dimen>
+    <dimen name="trade_shape_corner_width">0.5dp</dimen>
+</resources>

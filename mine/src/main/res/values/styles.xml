@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base, used for some item to show shadow-->
+    <style name="MineElevation"/>
+
+    <style name="MineSettingItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MineSettingItem.Single">
+        <item name="android:layout_height">@dimen/mine_setting_item_wrapper_height</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin</item>
+        <item name="android:layout_marginRight">@dimen/card_margin</item>
+        <item name="android:paddingStart">@dimen/card_padding</item>
+        <item name="android:paddingEnd">@dimen/card_padding</item>
+    </style>
+    <style name="MineSettingItem.Container">
+        <item name="android:layout_marginLeft">@dimen/card_margin</item>
+        <item name="android:layout_marginRight">@dimen/card_margin</item>
+        <item name="android:layout_marginTop">@dimen/mine_setting_item_vertical_gap</item>
+        <item name="android:paddingStart">@dimen/card_padding</item>
+        <item name="android:paddingEnd">@dimen/card_padding</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+    <style name="MineSettingItem.InContainer">
+        <item name="android:layout_height">@dimen/mine_setting_item_height</item>
+        <item name="android:paddingStart">@dimen/mine_horizontal_margin</item>
+        <item name="android:paddingEnd">@dimen/mine_horizontal_margin</item>
+    </style>
+
+    <style name="MineTitleStyle">
+        <item name="android:layout_height">@dimen/mine_title_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mine_title_color</item>
+        <item name="android:textSize">@dimen/mine_title_size</item>
+        <item name="android:lineSpacingExtra">@dimen/mine_title_size</item>
+    </style>
+
+    <style name="MineLoginButtons">
+        <item name="android:layout_width">@dimen/mine_login_buttons_width</item>
+        <item name="android:layout_height">@dimen/mine_login_buttons_height</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mine_login_button_white</item>
+        <item name="android:background">@drawable/mine_login_button_selector</item>
+    </style>
+
+    <style name="MineLoginButtons.Register">
+        <item name="android:layout_marginLeft">@dimen/dimen_8</item>
+        <item name="android:textColor">@color/mine_login_button_gray</item>
+        <item name="android:background">@drawable/mine_register_button_selector</item>
+    </style>
+
+    <style name="MineLogoutButtons" parent="MineSettingItem.InContainer">
+        <item name="android:layout_height">@dimen/mine_logout_buttons_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/dimen_16</item>
+        <item name="android:textColor">@color/mine_logout_button_color</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_16</item>
+    </style>
+
+    <style name="MineUserPreviewContainer" parent="MineSettingItem.Container">
+        <item name="android:layout_height">@dimen/mine_user_preview_height</item>
+        <item name="android:layout_marginTop">@dimen/mine_user_preview_top_offset</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MineUserInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_general</item>
+        <item name="android:layout_marginRight">@dimen/margin_general</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/mine_user_info</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <!--dialog styles-->
+    <style name="MineDialogRoot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/horizontal_divider</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/selector_single_white_r12</item>
+    </style>
+
+    <style name="MineDialog"/>
+    <style name="MineDialog.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_dialog_button_height</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/mine_dialog_title_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="MineDialog.Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/mine_dialog_content_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/mine_dialog_content_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/mine_dialog_content_vertical_margin</item>
+        <item name="android:layout_marginBottom">@dimen/mine_dialog_content_vertical_margin</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/itemTitleColor</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:maxHeight">@dimen/mine_dialog_max_height</item>
+        <item name="android:minHeight">@dimen/mine_dialog_min_height</item>
+        <item name="android:minWidth">@dimen/mine_dialog_min_width</item>
+        <item name="android:maxWidth">@dimen/mine_dialog_max_width</item>
+    </style>
+    <style name="MineDialog.NormalBtn">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/mine_dialog_button_height</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mine_dialog_nature_button_color</item>
+    </style>
+    <style name="MineDialog.NormalBtn.Positive">
+        <item name="android:textColor">@color/mine_dialog_positive_button_color</item>
+    </style>
+
+</resources>

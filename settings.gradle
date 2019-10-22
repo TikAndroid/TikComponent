@@ -1,0 +1,13 @@
+include ':app', ':trade',
+        ':account',
+        ':config',
+        ':basemvp',
+        ':widgetkit',
+        ':lib.common',
+        ':bussiness.base',
+        ':lib.style',
+        ':token',
+        ':market',
+        ':information',
+        ':property',
+        ':mine'

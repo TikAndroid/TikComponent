@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.tik.android.component.MediumTextView
+                android:id="@+id/tv_total_assets_title"
+                style="@style/property_black_14"
+                android:layout_marginTop="22dp"
+                android:text="@string/property_total_assets"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/icon_visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.tik.android.component.MediumTextView
+                android:id="@+id/tv_total_assets"
+                style="@style/property_black_32"
+                android:layout_marginTop="8dp"
+                tools:text="2,985,669.73"
+                app:layout_constraintEnd_toEndOf="@+id/tv_total_assets_title"
+                app:layout_constraintStart_toStartOf="@+id/tv_total_assets_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_total_assets_title" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.tik.android.component.widget.RegularTextView
+                    style="@style/property_grey_11"
+                    android:text="@string/property_stock_assets" />
+                <com.tik.android.component.widget.RegularTextView
+                    android:id="@+id/tv_stock_assets"
+                    style="@style/property_black_15"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    tools:text="2,942,864.73"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="48dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <com.tik.android.component.widget.RegularTextView
+                    style="@style/property_grey_11"
+                    android:text="@string/property_stock_profit"/>
+                <com.tik.android.component.widget.RegularTextView
+                    android:id="@+id/tv_total_profit"
+                    style="@style/property_black_15"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    tools:text="-496.88"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.3dp"
+                android:layout_height="48dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <com.tik.android.component.widget.RegularTextView
+                    style="@style/property_grey_11"
+                    android:text="@string/property_stock_profit_rate"/>
+                <com.tik.android.component.widget.RegularTextView
+                    android:id="@+id/tv_total_profit_rate"
+                    style="@style/property_black_15"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    tools:text="-37.02%"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_13"
+            android:layout_marginBottom="@dimen/dimen_23"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_buy_power_title"
+                    android:text="@string/property_buy_power"
+                    style="@style/property_black_12"/>
+
+                <com.tik.android.component.widget.RegularTextView
+                    android:id="@+id/tv_buy_power"
+                    style="@style/property_black_14"
+                    android:layout_marginStart="4dp"
+                    tools:text="$42,805.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_freeze_title"
+                    android:text="@string/property_freeze_assets"
+                    style="@style/property_black_12"/>
+
+                <com.tik.android.component.widget.RegularTextView
+                    android:id="@+id/tv_freeze_assets"
+                    style="@style/property_black_14"
+                    android:layout_marginStart="4dp"
+                    tools:text="$0.00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16"
+            android:paddingStart="@dimen/dimen_16"
+            android:orientation="vertical">
+            <TextView
+                style="@style/property_grey_14"
+                android:text="@string/property_us_stock_assets"/>
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/tv_us_assets"
+                style="@style/property_black_16"
+                android:layout_marginTop="@dimen/dimen_10"
+                tools:text="240,876.74"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_card"
+            android:paddingTop="@dimen/dimen_16"
+            android:paddingBottom="@dimen/dimen_16"
+            android:paddingStart="@dimen/dimen_16"
+            android:orientation="vertical">
+            <TextView
+                style="@style/property_grey_14"
+                android:text="@string/property_hk_stock_assets"/>
+            <com.tik.android.component.widget.RegularTextView
+                android:id="@+id/tv_hk_assets"
+                style="@style/property_black_16"
+                android:layout_marginTop="@dimen/dimen_10"
+                tools:text="0.00" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.tik.android.component.widget.MediumTextView
+        android:id="@+id/tv_assets_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_padding"
+        android:visibility="gone"
+        android:text="@string/property_stock_detail"
+        android:textColor="#ff626678"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:id="@+id/ll_no_assets"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/null_assets" />
+
+        <TextView
+            style="@style/property_grey_14"
+            android:layout_marginTop="12dp"
+            android:text="@string/property_current_no_stock"/>
+
+        <TextView
+            android:id="@+id/tv_choose_assets"
+            style="@style/property_blue_14"
+            android:layout_marginTop="12dp"
+            android:text="@string/property_choose_stock"/>
+
+    </LinearLayout>
+</LinearLayout>

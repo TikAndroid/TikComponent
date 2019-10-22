@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/third_part_container"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            style="@style/AccountImageButtonStyle.ThirdLoginIcon"
+            android:id="@+id/btn_wechat"
+            android:src="@drawable/account_ic_wechat"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_google"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            style="@style/AccountImageButtonStyle.ThirdLoginIcon"
+            android:id="@+id/btn_google"
+            android:visibility="gone"
+            android:src="@drawable/account_ic_google"
+            app:layout_constraintBottom_toBottomOf="@id/btn_wechat"
+            app:layout_constraintStart_toEndOf="@id/btn_wechat"
+            app:layout_constraintEnd_toStartOf="@id/btn_facebook"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+        <ImageView
+            style="@style/AccountImageButtonStyle.ThirdLoginIcon"
+            android:id="@+id/btn_facebook"
+            android:visibility="gone"
+            android:src="@drawable/account_ic_facebook"
+            app:layout_constraintBottom_toBottomOf="@id/btn_wechat"
+            app:layout_constraintStart_toEndOf="@id/btn_google"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:textAppearance="@style/AccountTextStyle.Little.Deactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/account_intro_login_by_other"
+        app:layout_constraintBottom_toTopOf="@+id/third_part_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

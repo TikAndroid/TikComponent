@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--orders-->
+    <color name="trade_order_filter_container_bg">#fefefe</color>
+    <color name="trade_order_filter_title_color">#FFFFFF</color>
+    <color name="trade_order_filter_title_border_color">#a0aaeffe</color>
+    <color name="trade_order_detail_status">#A01f1f1f</color>
+    <color name="trade_order_detail_direction">#D000FF00</color>
+    <color name="trade_title_detail">@color/itemTitleColor</color>
+    <color name="trade_empty_tips_color">#A6AEBC</color>
+    <color name="trade_empty_action_color">#536DFE</color>
+
+    <color name="trade_direction_buy">#43B944</color>
+    <color name="trade_direction_sell">#FF6666</color>
+
+    <color name="trade_order_detail_button">@color/highlight</color>
+    <color name="trade_detail_shape_button_solid">@color/white</color>
+    <color name="trade_detail_shape_button_corner">#ffaeb2c2</color>
+
+    <color name="trade_form_input_hint">#7faeb2c2</color>
+</resources>

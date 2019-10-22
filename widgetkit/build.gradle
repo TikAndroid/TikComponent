@@ -1,0 +1,21 @@
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    api deps.support.app_compat
+    api deps.constraint_layout
+    testImplementation deps.junit
+
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+
+    api deps.constraint_layout
+    api deps.support.recyclerview
+    api deps.multitype
+    api deps.SmartRefreshLayout
+    api deps.SmartRefreshHeader
+    api deps.support.design
+
+    if (isOpenAutoSize) {
+        api deps.autosize
+    }
+}

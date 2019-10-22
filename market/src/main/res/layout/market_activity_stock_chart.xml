@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/market_color_chart_page_root_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_chart_title"
+        style="@style/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2">
+
+        <ImageView
+            android:id="@+id/btn_chart_back"
+            style="@style/TitleClickableImageStyle"
+            android:src="@drawable/ic_back_circle"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/stock_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_content_height"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5"/>
+
+        <ImageView
+            android:id="@+id/btn_chart_search"
+            style="@style/TitleClickableImageStyle"
+            android:src="@drawable/ic_search_circle"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/chart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_chart_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/price_info_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/market_chart_bg"
+                app:layout_constraintTop_toTopOf="@id/chart_refresh_layout">
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_curr_sign_and_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_top_height"
+                    android:gravity="center"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/stock_gains_and_value"/>
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_gains_and_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_top_height"
+                    android:layout_marginLeft="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/stock_curr_sign_and_price"
+                    app:layout_constraintLeft_toRightOf="@id/stock_curr_sign_and_price"
+                    app:layout_constraintRight_toRightOf="@id/price_info_parent"
+                    app:layout_constraintTop_toTopOf="@id/stock_curr_sign_and_price"/>
+
+                <View
+                    android:id="@+id/divide_line_price_hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_divider"
+                    android:background="@color/divider"
+                    app:layout_constraintTop_toBottomOf="@id/stock_curr_sign_and_price"/>
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_high_value"
+                    style="@style/market_chart_price_gains_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_bottom_height"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/divide_line_price_ver_1"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <View
+                    android:id="@+id/divide_line_price_ver_1"
+                    android:layout_width="@dimen/dimen_divider"
+                    android:layout_height="0dp"
+                    android:background="@color/divider"
+                    app:layout_constraintBottom_toBottomOf="@id/price_info_parent"
+                    app:layout_constraintLeft_toRightOf="@id/stock_high_value"
+                    app:layout_constraintRight_toLeftOf="@id/stock_low_value"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_low_value"
+                    style="@style/market_chart_price_gains_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_bottom_height"
+                    app:layout_constraintLeft_toRightOf="@id/divide_line_price_ver_1"
+                    app:layout_constraintRight_toLeftOf="@id/divide_line_price_ver_2"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <View
+                    android:id="@+id/divide_line_price_ver_2"
+                    android:layout_width="@dimen/dimen_divider"
+                    android:layout_height="0dp"
+                    android:background="@color/divider"
+                    app:layout_constraintBottom_toBottomOf="@id/price_info_parent"
+                    app:layout_constraintLeft_toRightOf="@id/stock_low_value"
+                    app:layout_constraintRight_toLeftOf="@id/stock_open_value"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_open_value"
+                    style="@style/market_chart_price_gains_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_bottom_height"
+                    app:layout_constraintLeft_toRightOf="@id/divide_line_price_ver_2"
+                    app:layout_constraintRight_toLeftOf="@id/divide_line_price_ver_3"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <View
+                    android:id="@+id/divide_line_price_ver_3"
+                    android:layout_width="@dimen/dimen_divider"
+                    android:layout_height="0dp"
+                    android:background="@color/divider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/stock_open_value"
+                    app:layout_constraintRight_toLeftOf="@id/stock_close_value"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+
+                <com.tik.android.component.RegularTextView
+                    android:id="@+id/stock_close_value"
+                    style="@style/market_chart_price_gains_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/market_chart_info_bottom_height"
+                    app:layout_constraintLeft_toRightOf="@id/divide_line_price_ver_3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divide_line_price_hor"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <com.tik.android.component.market.widget.StockChartView
+                android:id="@+id/stock_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:background="@drawable/market_chart_bg"
+                android:paddingBottom="@dimen/dimen_8"/>
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/market_chart_bg"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/chart_text_self_watch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/market_watch_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_24"
+            android:paddingRight="@dimen/dimen_24"
+            android:text="@string/self_watch"
+            android:textColor="@color/market_selector_chart_btn_color"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/chart_text_share"/>
+
+        <TextView
+            android:id="@+id/chart_text_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/market_share_star_icon"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_8"
+            android:paddingLeft="@dimen/dimen_12"
+            android:paddingRight="@dimen/dimen_24"
+            android:text="@string/text_share"
+            android:visibility="gone"
+            android:textColor="@color/market_selector_chart_btn_color"
+            android:textSize="@dimen/text_12"
+            app:layout_constraintHorizontal_weight="0.2"
+            app:layout_constraintLeft_toRightOf="@id/chart_text_self_watch"
+            app:layout_constraintRight_toLeftOf="@id/chart_goto_trade"/>
+
+        <TextView
+            android:id="@+id/chart_goto_trade"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:background="@drawable/bg_round_rect_highlight"
+            android:gravity="center"
+            android:text="@string/text_trade"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintLeft_toRightOf="@id/chart_text_share"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chart_text_share"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+{
+  "HKD": {
+    "city": "Hong Kong",
+    "dollar": "HK$",
+    "open": "09:30",
+    "close": "16:00",
+    "country": "China",
+    "id": "HKEX",
+    "lunch": "12:00-13:00",
+    "name": "Hong Kong Stock Exchange",
+    "tz": "Asia/Hong_Kong",
+    "closeDays": [
+      {
+        "date": "2018-09-25",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-10-01",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-10-17",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-12-25",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-12-26",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      }
+    ]
+  },
+  "USD": {
+    "city": "New York",
+    "dollar": "$",
+    "open": "09:30",
+    "close": "16:00",
+    "country": "United States",
+    "id": "NYSE",
+    "name": "New York Stock Exchange",
+    "tz": "America/New_York",
+    "closeDays": [
+      {
+        "date": "2018-09-03",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-11-22",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      },
+      {
+        "date": "2018-11-23",
+        "startClose": "09:30",
+        "endClose": "13:00"
+      },
+      {
+        "date": "2018-12-24",
+        "startClose": "09:30",
+        "endClose": "13:00"
+      },
+      {
+        "date": "2018-12-25",
+        "startClose": "09:30",
+        "endClose": "16:00",
+        "freeze": true
+      }
+    ]
+  }
+}

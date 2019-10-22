@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout style="@style/AccountTitleBarStyle">
+
+        <ImageView
+            android:id="@+id/title_btn_left"
+            style="@style/TitleClickableImageStyle"
+            android:src="@drawable/ic_back_circle"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:textAppearance="@style/AccountTextStyle.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/account_margin_large"
+                android:gravity="center"
+                android:text="@string/account_verify_input_prompt"
+                android:textAppearance="@style/AccountTextStyle.Primary" />
+
+            <include layout="@layout/account_divider" />
+
+            <com.tik.android.component.widget.VerificationCodeInput
+                android:id="@+id/verify_input_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="@dimen/super_title"
+                app:code_length="6" />
+
+            <TextView
+                android:id="@+id/btn_resend_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="@dimen/account_margin_large"
+                android:gravity="center"
+                android:text="@string/account_resend"
+                android:textAppearance="@style/AccountTextStyle.Medium.Highlight" />
+        </LinearLayout>
+
+        <TextView
+            android:textAppearance="@style/AccountTextStyle.Primary.Inverse"
+            android:id="@+id/verify_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/margin_general"
+            android:background="@drawable/bg_round_rect_highlight"
+            android:gravity="center"
+            android:text="@string/account_complete_register" />
+
+    </LinearLayout>
+</LinearLayout>

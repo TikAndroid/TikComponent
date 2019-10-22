@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SettingItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="SettingItem.Title">
+        <item name="android:layout_marginLeft">@dimen/setting_item_horizon_gap</item>
+    </style>
+
+    <style name="SettingItem.Arrow">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

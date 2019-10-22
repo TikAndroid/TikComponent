@@ -1,0 +1,179 @@
+[
+  {
+    "symbol": "VOO",
+    "name": "vanguard 500",
+    "cname": "标普500 ETF",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "cname": "纳指100ETF",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "AAPL",
+    "name": "Apple, Inc.",
+    "cname": "苹果公司",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "FB",
+    "name": "Facebook, Inc.",
+    "cname": "Facebook",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "BABA",
+    "name": "Alibaba Group Holding Ltd.",
+    "cname": "阿里巴巴",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "cname": "特斯拉",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "cname": "亚马逊公司",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "GOOG",
+    "name": "alphabet inc.",
+    "cname": "谷歌",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "JD",
+    "name": "JD.com, Inc.",
+    "cname": "京东",
+    "currency": "USD",
+    "local": true
+  },
+
+  {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "cname": "美国超微公司",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft Corp.",
+    "cname": "微软公司",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "BIDU",
+    "name": "Baidu, Inc.",
+    "cname": "百度",
+    "currency": "USD",
+    "local": true
+  },
+  {
+    "symbol": "PDD",
+    "name": "Pinduoduo Inc.",
+    "cname": "拼多多公司",
+    "currency": "USD",
+    "local": true
+  },
+
+  {
+    "symbol": "01810",
+    "name": "XIAOMI-W",
+    "cname": "小米集团－Ｗ",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "00700",
+    "name": "TENCENT",
+    "cname": "腾讯控股",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "03690",
+    "name": "MEITUAN-W",
+    "cname": "美团点评－Ｗ",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "01060",
+    "name": "ALI PICTURES",
+    "cname": "阿里影业",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "00241",
+    "name": "CITIC 21CN",
+    "cname": "阿里健康",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "06862",
+    "name": "HAIDILAO",
+    "cname": "海底捞",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "01357",
+    "name": "MEITU",
+    "cname": "美图公司",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "03700",
+    "name": "INKE",
+    "cname": "映客",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "00175",
+    "name": "GEELY AUTO",
+    "cname": "吉利汽车",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "01211",
+    "name": "BYD COMPANY",
+    "cname": "比亚迪",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "00762",
+    "name": "CHINA UNICOM",
+    "cname": "中国联通",
+    "currency": "HKD",
+    "local": true
+  },
+  {
+    "symbol": "00285",
+    "name": "BYD ELECTRONIC",
+    "cname": "比亚迪电子",
+    "currency": "HKD",
+    "local": true
+  }
+]

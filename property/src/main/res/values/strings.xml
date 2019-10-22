@@ -1,0 +1,18 @@
+<resources>
+    <string name="property_app_name">property</string>
+    <string name="property_assets_current_total_price">持仓/市值</string>
+    <string name="property_current_hold_price">最新价/成本</string>
+    <string name="property_profit_profit_rate">盈亏</string>
+    <string name="property_toolbar_name">我的资产</string>
+    <string name="property_total_assets">总资产($)</string>
+    <string name="property_stock_assets">证券资产</string>
+    <string name="property_stock_profit">持仓盈亏</string>
+    <string name="property_stock_profit_rate">盈亏比例</string>
+    <string name="property_buy_power">购买力:</string>
+    <string name="property_freeze_assets">冻结资金:</string>
+    <string name="property_us_stock_assets">美股持仓($)</string>
+    <string name="property_hk_stock_assets">港股持仓(HK$)</string>
+    <string name="property_stock_detail">持仓明细</string>
+    <string name="property_current_no_stock">当前暂无持仓</string>
+    <string name="property_choose_stock">去选股</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout style="@style/Toolbar">
+
+        <TextView
+            android:id="@+id/mine_tv_name"
+            style="@style/MineTitleStyle"
+            android:text="@string/mine_title"
+            android:textAppearance="@style/TextStyle.Title" />
+    </FrameLayout>
+
+    <LinearLayout style="@style/MineUserPreviewContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:src="@drawable/icon_user_preview" />
+
+        <TextView
+            android:id="@+id/mine_login_btn"
+            style="@style/MineLoginButtons"
+            android:text="@string/mine_login" />
+
+        <TextView
+            android:id="@+id/mine_register_btn"
+            style="@style/MineLoginButtons.Register"
+            android:text="@string/mine_register" />
+
+        <TextView
+            android:id="@+id/mine_user_name"
+            style="@style/MineUserInfo" />
+    </LinearLayout>
+
+    <!--next section-->
+    <LinearLayout style="@style/MineSettingItem.Container">
+
+        <com.tik.android.component.widget.SettingItem
+            android:id="@+id/mine_orders"
+            style="@style/MineSettingItem.InContainer"
+            mine:icon="@drawable/mine_icon_order"
+            mine:style="single"
+            mine:title="@string/mine_order_setting" />
+    </LinearLayout>
+
+    <!--next section-->
+    <LinearLayout
+        style="@style/MineSettingItem.Container"
+        android:showDividers="middle"
+        android:divider="@color/divider">
+
+        <com.tik.android.component.widget.SettingItem
+            android:id="@+id/mine_security_setting"
+            style="@style/MineSettingItem.InContainer"
+            mine:icon="@drawable/icon_security"
+            mine:style="top"
+            mine:title="@string/mine_security_setting" />
+
+        <com.tik.android.component.widget.SettingItem
+            android:id="@+id/mine_language_setting"
+            style="@style/MineSettingItem.InContainer"
+            android:visibility="gone"
+            mine:title="@string/mine_language_setting" />
+
+        <com.tik.android.component.widget.SettingItem
+            android:id="@+id/mine_assist_setting"
+            style="@style/MineSettingItem.InContainer"
+            mine:icon="@drawable/icon_assistant"
+            mine:style="mid"
+            mine:title="@string/mine_assist_setting" />
+
+        <com.tik.android.component.widget.SettingItem
+            android:id="@+id/mine_report_setting"
+            style="@style/MineSettingItem.InContainer"
+            mine:icon="@drawable/icon_edit"
+            mine:style="bottom"
+            mine:title="@string/mine_report_setting" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/MineSettingItem.Container">
+
+        <com.tik.android.component.widget.DotSettingItem
+            android:id="@+id/mine_about_setting"
+            style="@style/MineSettingItem.InContainer"
+            mine:dotColor="@color/colorTipsDot"
+            mine:icon="@drawable/icon_information"
+            mine:title="@string/mine_about_setting" />
+    </LinearLayout>
+
+    <!--new section-->
+    <LinearLayout
+        android:id="@+id/mine_logout_btn_container"
+        style="@style/MineSettingItem.Container">
+
+        <TextView
+            android:id="@+id/mine_logout_btn"
+            style="@style/MineLogoutButtons"
+            android:text="@string/mine_logout" />
+    </LinearLayout>
+
+</LinearLayout>

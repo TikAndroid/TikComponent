@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:background="@drawable/bg_card"
+    android:layout_marginBottom="@dimen/card_padding"
+    android:padding="@dimen/card_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/card_margin"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/trade_stock_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_tag_us" />
+
+        <com.tik.android.component.widget.MediumTextView
+            android:id="@+id/trade_stock_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/itemTitleColor"
+            android:textSize="@dimen/text_16"
+            tools:text="00700" />
+
+        <TextView
+            android:id="@+id/trade_stock_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/itemSubTitleColor"
+            android:textSize="@dimen/text_12"
+            android:layout_weight="1"
+            tools:text="(TENCENT)" />
+
+        <TextView
+            android:id="@+id/trade_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_12"
+            android:layout_marginStart="@dimen/dimen_6"
+            tools:text="委托成功" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/trade_item_second_line"
+        android:layout_marginStart="@dimen/margin_general"
+        android:layout_marginEnd="@dimen/margin_general"
+        android:layout_marginBottom="@dimen/margin_general"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/trade_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/trade_direction_buy"
+            android:textSize="@dimen/text_12"
+            android:gravity="start"
+            android:lines="1"
+            tools:text="卖出" />
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/trade_average_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:layout_weight="1"
+            tools:text="\@213.66" />
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/trade_number_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:lines="1"
+            android:textSize="@dimen/text_12"
+            tools:text="20/100" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TradeFilter.Header">
+
+    <TextView
+        android:id="@+id/trade_list_header_title"
+        style="@style/TradeFilter.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/trade_list_header_title" />
+
+    <Switch
+        android:id="@+id/trade_list_hide_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trade_list_header_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trade_list_hide_other_tv"
+        style="@style/TradeFilter.SubTitle"
+        android:layout_marginStart="@dimen/dimen_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/trade_list_hide_other"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/trade_list_header_hide_other" />
+
+    <TextView
+        android:id="@+id/trade_list_header_show_all"
+        style="@style/TradeFilter.SubTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/trade_list_hide_other_tv"
+        app:layout_constraintEnd_toStartOf="@id/trade_list_header_show_all_img"
+        app:layout_constraintTop_toTopOf="@+id/trade_list_hide_other_tv"
+        tools:text="@string/trade_list_header_show_all" />
+
+    <ImageView
+        android:id="@+id/trade_list_header_show_all_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_icon_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

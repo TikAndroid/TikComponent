@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TradeOrderDetail.ItemSub">
+
+    <TextView
+        android:id="@+id/trade_order_detail"
+        style="@style/TradeOrderDetail.Title"
+        app:layout_constraintEnd_toStartOf="@id/trade_order_detail_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="方向" />
+
+    <com.tik.android.component.widget.RegularTextView
+        android:id="@+id/trade_order_detail_value"
+        style="@style/TradeOrderDetail.Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trade_order_detail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="买入" />
+</android.support.constraint.ConstraintLayout>

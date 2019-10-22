@@ -1,0 +1,87 @@
+<resources>
+    <string name="account_app_name">account</string>
+
+    <!--注册引导页-->
+    <string name="account_intro_hox_title">票</string>
+    <string name="account_intro_hox_advantage">金</string>
+    <string name="account_intro_register">注册新账号</string>
+    <string name="account_intro_login">登录已有账号</string>
+    <string name="account_intro_login_by_other">其他登录方式</string>
+
+    <!--注册登录页-->
+    <string name="account_register_title">注册</string>
+    <string name="account_register_login">登录</string>
+    <string name="account_register_input_country">国家和地区</string>
+    <string name="account_register_input_phone">手机号</string>
+    <string name="account_register_input_mail">邮箱</string>
+    <string name="account_register_input_pwd">密码8-20位，非纯数字或纯字母</string>
+    <string name="account_login_input_pwd">登录密码</string>
+    <string name="account_register_input_invite">邀请码 (选填)</string>
+    <string name="account_register_btn_register_immediately">立即注册</string>
+    <string name="account_register_btn_register_by_mail">邮箱注册</string>
+    <string name="account_register_btn_register_by_phone">手机注册</string>
+    <string name="account_login_by_mail">邮箱登录</string>
+    <string name="account_login_by_phone">手机登录</string>
+    <string name="account_forgot_pwd">忘记密码</string>
+    <string name="account_register_service_contract">注册即表示同意《服务协议》及《隐私条款》</string>
+    <string name="account_install_tips_wechat">没有安装微信,去安装</string>
+    <string name="account_register_email_error">邮箱格式不正确，请重新填写</string>
+    <string name="account_register_phone_error">手机号码格式不正确，请重新填写</string>
+    <string name="account_register_pwd_error">密码格式不正确，请重新填写</string>
+
+    <!--验证码校验-->
+    <string name="account_verify_sms">短信验证</string>
+    <string name="account_verify_email">邮箱验证</string>
+    <string name="account_verify_input_prompt">请输入验证码</string>
+    <string name="account_resend_countdown">%ds 后可重新获取</string>
+    <string name="account_resend">重新获取</string>
+    <string name="account_complete_register">完成注册</string>
+    <string name="account_country_search">搜索地区名称/区号</string>
+
+    <string name="account_third_part_authorized">"%1$s" 授权成功</string>
+    <string name="account_third_part_authorize_failed">"%1$s" 授权失败</string>
+    <string name="account_google_verify">谷歌验证</string>
+    <string name="account_hint_google_verify_code">请输入谷歌验证码</string>
+    <string name="account_sms_verify">短信验证</string>
+    <string name="account_hint_sms_verify_code">请输入短信验证码</string>
+    <string name="account_email_verify">邮箱验证</string>
+    <string name="account_hint_email_verify_code">请输入邮箱验证码</string>
+    <string name="account_security_verify">安全验证</string>
+
+    <!--手机号/邮箱绑定-->
+    <string name="account_binding_title">补充资料</string>
+    <string name="account_binding_tips">请确认您要绑定的手机号/邮箱</string>
+    <string name="account_binding_dialog_default_message">该手机号对应了已有账户，绑定后，将只保留手机账号的数据</string>
+    <string name="account_binding_dialog_message">该账号已绑定其它"%1$s"如需换绑，请登录后直接操作</string>
+    <string name="account_binding_dialog_login">去登陆</string>
+    <string name="account_binding_dialog_ok">确认</string>
+    <string name="account_binding_dialog_cancel">取消</string>
+    <string name="account_binding_number_format_error">手机号码格式不正确</string>
+    <string name="account_binding_email_format_error">邮箱格式不正确</string>
+    <string name="account_binding_success">绑定成功</string>
+    <string name="account_binding_get_verifi_code">获取验证码</string>
+    <string name="account_binding_verifi_code">验证码</string>
+    <string name="account_binding_invita_code">邀请码（选填）</string>
+    <string name="account_binding_bind">绑定</string>
+    <string name="account_binding_code_verify_hint">请输入您收到的验证码</string>
+    <string name="account_binding_code_verify">获取验证码</string>
+    <string name="account_binding_title_phone">绑定手机号</string>
+    <string name="account_binding_title_email">绑定邮箱</string>
+    <string name="account_binding_type_phone">使用手机绑定</string>
+    <string name="account_binding_type_email">使用邮箱绑定</string>
+    <string name="account_binding_code_resend">重新获取（"%1$d"）</string>
+
+    <!--交易密码-->
+    <string name="account_transaction_forget_password_">忘记密码?</string>
+    <string name="account_transaction_input_password">请输入交易密码(6位数)</string>
+    <string name="account_transaction_set_password">请设置交易密码(6位数)</string>
+    <string name="account_transaction_confirm_password">请再次输入确认</string>
+    <string name="account_transaction_re_enter_password">两次输入不一致，请重新设置</string>
+    <string name="account_transaction_password_error">交易密码不正确</string>
+    <string name="account_transaction_password_retry">重试</string>
+    <string name="account_transaction_forget_password">忘记密码</string>
+    <string name="account_transaction_set_password_title">交易密码-设置</string>
+    <string name="account_transaction_password_title">交易密码</string>
+
+
+</resources>

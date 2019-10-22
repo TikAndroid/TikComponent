@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="48dp">
+        <com.tik.android.component.widget.HoxTabLayout
+            android:id="@+id/type_tab"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/market_search"
+            style="@style/TitleClickableImageStyle"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/ic_search_circle" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        android:layout_marginStart="@dimen/dimen_12"
+        android:layout_marginEnd="@dimen/dimen_12"
+        android:background="#F6F8FC"
+        android:gravity="center_vertical">
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/market_tab_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/market_string_tab_name"
+            android:textColor="#6F7385"
+            android:textSize="@dimen/text_12" />
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/market_tab_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="end"
+            android:text="@string/market_string_tab_price"
+            android:textColor="#6F7385"
+            android:drawableRight="@drawable/sort"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_5"
+            android:textSize="@dimen/text_12" />
+
+        <com.tik.android.component.widget.RegularTextView
+            android:id="@+id/market_tab_gains"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="end"
+            android:text="@string/market_string_tab_gains"
+            android:textColor="#6F7385"
+            android:drawableRight="@drawable/sort"
+            android:textSize="@dimen/text_12"
+            android:drawablePadding="@dimen/dimen_5"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/market_tab_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/market_tab_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

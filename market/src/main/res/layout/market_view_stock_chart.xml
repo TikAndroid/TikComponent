@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_1"
+    android:layout_marginRight="@dimen/dimen_1">
+
+    <Space
+        android:id="@+id/chart_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_15"/>
+
+    <com.tik.android.component.widget.HoxTabLayout
+        android:id="@+id/chart_tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_14"
+        android:layout_marginRight="@dimen/dimen_12"
+        app:layout_constraintTop_toBottomOf="@id/chart_top_space"
+        app:layout_constraintRight_toLeftOf="@id/chart_mode_btn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/chart_mode_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_general"
+        android:background="@drawable/market_selector_chart_mode"
+        app:layout_constraintLeft_toRightOf="@id/chart_tab_layout"
+        app:layout_constraintTop_toBottomOf="@id/chart_top_space"
+        app:layout_constraintBottom_toBottomOf="@id/chart_tab_layout"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/line_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_divider"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/chart_tab_layout"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chart_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line_divide">
+
+        <com.tik.android.component.market.widget.HoxBarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/market_bar_chart_height"
+            app:layout_constraintBottom_toBottomOf="@id/chart_root"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/market_line_chart_height"/>
+
+        <com.github.mikephil.charting.charts.CandleStickChart
+            android:id="@+id/candle_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/market_line_chart_height"
+            android:visibility="invisible"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ViewStub
+        android:id="@+id/tmp_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/tmp_high_line_info"
+        android:layout="@layout/market_mark_high_line_view"
+        app:layout_constraintBottom_toTopOf="@id/line_divide"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

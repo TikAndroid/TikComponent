@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    apply from: 'versions.gradle'
+    addRepos(repositories)
+
+    dependencies {
+        classpath deps.android_gradle_plugin
+        classpath deps.google_services
+        classpath deps.gradle_bintray_plugin
+        classpath deps.android_maven_plugin
+        classpath deps.kotlin.plugin
+        classpath deps.andromeda_plugin
+        classpath deps.butterknife_gradle_plugin
+        classpath deps.walle_plugin
+        classpath deps.bugly_symtabfileuploader
+    }
+}
+
+allprojects {
+    addRepos(repositories)
+    repositories {
+        flatDir {
+            dirs project(':account').file('libs')
+        }
+    }
+}
+
+subprojects {
+    if (name == "app" || name == "token") {
+        apply plugin: 'com.android.application'
+    } else {
+        apply plugin: 'com.android.library'
+    }
+
+    android {
+        compileSdkVersion build_versions.compile_sdk
+        if (name != "lib.style"
+                && name != "widgetkit") {
+            resourcePrefix project.getName() + "_"
+        }
+
+        defaultConfig {
+            minSdkVersion build_versions.min_sdk
+            targetSdkVersion build_versions.target_sdk
+            versionCode build_versions.version_code
+            versionName build_versions.version_name
+        }
+
+        compileOptions {
+            sourceCompatibility build_versions.source_compatibility
+            targetCompatibility build_versions.target_compatibility
+        }
+
+        buildTypes {
+            debug {
+                minifyEnabled false
+            }
+
+            release {
+                minifyEnabled true
+                consumerProguardFiles 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

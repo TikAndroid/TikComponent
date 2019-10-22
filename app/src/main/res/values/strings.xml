@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tik</string>
+    <string name="app_market">行情</string>
+    <string name="app_trade">交易</string>
+    <string name="app_information">资讯</string>
+    <string name="app_property">资产</string>
+    <string name="app_mine">我的</string>
+</resources>
