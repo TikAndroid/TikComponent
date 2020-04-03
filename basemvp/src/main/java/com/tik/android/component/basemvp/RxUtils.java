@@ -10,11 +10,13 @@ import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Completable;
 import io.reactivex.FlowableTransformer;
 import io.reactivex.Observable;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 public class RxUtils {
@@ -125,6 +127,78 @@ public class RxUtils {
                 .subscribeOn(Schedulers.computation())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(main::doOnMain, e -> LogUtil.e("", e));
+    }
+
+    /**
+     * NewCacheThreadPool
+     *
+     * @param runnable
+     */
+    public static Disposable runIo(Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        return Schedulers.io().createWorker().schedule(runnable, delay, unit);
+    }
+    public static Disposable runIo(Runnable runnable) {
+        return Schedulers.io().createWorker().schedule(runnable);
+    }
+
+    /**
+     * NewFixedThreadPool
+     *
+     * @param runnable
+     */
+    public static Disposable runComputation(Runnable runnable) {
+        return Schedulers.computation().createWorker().schedule(runnable);
+    }
+
+    public static Disposable runComputation(Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        return Schedulers.computation().createWorker().schedule(runnable, delay, unit);
+    }
+
+    /**
+     * 随机抢占cpu资源
+     * @param runnable
+     */
+    public static Disposable runNewThread(Runnable runnable) {
+        return Schedulers.newThread().createWorker().schedule(runnable);
+    }
+
+    public static Disposable runNewThread(Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        return Schedulers.newThread().createWorker().schedule(runnable, delay, unit);
+    }
+
+    /**
+     * 单线程顺序执行
+     * @param runnable
+     */
+    public static Disposable runSingle(Runnable runnable) {
+        return Schedulers.single().createWorker().schedule(runnable);
+    }
+
+    public static Disposable runSingle(Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        return Schedulers.single().createWorker().schedule(runnable, delay, unit);
+    }
+
+    public static Disposable runUI(Runnable runnable) {
+        return AndroidSchedulers.mainThread().createWorker().schedule(runnable);
+    }
+
+    public static Disposable runUI(Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        return AndroidSchedulers.mainThread().createWorker().schedule(runnable, delay, unit);
+    }
+
+    /**
+     * 绑定生命周期， 无需考虑资源释放问题
+     * @param view
+     * @param runnable
+     * @param delay
+     * @param unit
+     */
+    public static void runSafeUI(final Object view, Runnable runnable, long delay, @NonNull TimeUnit unit) {
+        Completable.fromRunnable(runnable)
+                .compose(RxUtils.bindToLifecycle(view))
+                .delay(delay, unit)
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .subscribe();
     }
 
     public interface Work<T> {
